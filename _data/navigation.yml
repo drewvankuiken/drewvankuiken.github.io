@@ -15,8 +15,8 @@ main:
   # - title: "Blog Posts"
   #   url: /year-archive/
 
-  - title: "About Me"
-    url: /about/
+#  - title: "About Me"
+#    url: /about/
 
   - title: "Research"
     url: /research/
