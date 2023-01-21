@@ -81,13 +81,13 @@ analytics:
 # Site Author
 author:
   name             : "Drew Van Kuiken"
-  avatar           : "profile.jpg"
+  avatar           : "profile.JPG"
   bio              : "Second-year Econ Ph.D. at UNC Chapel Hill, interested in IO and innovation"
   location         : "Chapel Hill, NC"
   employer         :
   pubmed           : 
   googlescholar    : 
-  email            :
+  email            :  "drew.van.kuiken@unc.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
