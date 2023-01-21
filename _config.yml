@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Drew Van Kuiken / site description"
+title                    : "Drew Van Kuiken"
 title_separator          : "-"
 name                     : &name "Drew Van Kuiken"
 description              : &description "Econ Ph.D. student at UNC, interested in IO and innovation."
@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Drew Van Kuiken"
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   bio              : "Second-year Econ Ph.D. at UNC Chapel Hill, interested in IO and innovation"
   location         : "Chapel Hill, NC"
   employer         :
