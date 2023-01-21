@@ -9,6 +9,7 @@ author_profile: false
 
 ### Others' Links
 * [Claes Backman](https://sites.google.com/view/claesbackman/tips-for-phd-students)
+* [Dan Stone](https://research.bowdoin.edu/daniel-f-stone/links/) (my advisor in college)
 
 ### Beamer Tips
 * [Paul Goldsmith-Pinkham](https://github.com/paulgp/beamer-tips/blob/master/slides.pdf)
