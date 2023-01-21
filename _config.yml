@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Drew Van Kuiken"
-  avatar           : "files/profile.JPG"
+  avatar           : "profile.JPG"
   bio              : "Second-year Econ Ph.D. at UNC Chapel Hill, interested in IO and innovation"
   location         : "Chapel Hill, NC"
   employer         :
