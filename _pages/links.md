@@ -2,7 +2,7 @@
 permalink: /links/
 title: "Some Helpful Links"
 excerpt: ""
-author_profile: false
+author_profile: true
 ---
 ### Economics
 * Phil Haile on [Structural vs. Reduced Form](/files/helpful_materials/haile_slides/haile_slides.pdf)

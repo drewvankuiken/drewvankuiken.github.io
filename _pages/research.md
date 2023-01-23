@@ -2,7 +2,7 @@
 permalink: /research/
 title: "Research"
 excerpt: ""
-author_profile: false
+author_profile: true
 ---
 ### Active Research
 My research is in progress. Currently, I'm thinking about innovation spillovers and market power in new product markets and internships as an optimal monitoring design. 
