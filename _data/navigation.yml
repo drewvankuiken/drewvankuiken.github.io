@@ -23,6 +23,9 @@ main:
 
   - title: "CV"
     url: /files/cv.pdf
-    
+
+#  - title: "Teaching"
+#    url: /teaching/    
+#    
   - title: "Links"
     url: /links/
