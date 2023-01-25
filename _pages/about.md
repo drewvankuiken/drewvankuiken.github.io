@@ -11,4 +11,4 @@ My name is Drew Van Kuiken. I'm a second-year Econ Ph.D. student at [UNC - Chape
 
 Outside of econ, I enjoy backcountry skiing, hiking, and Eu4 (a history simulator game that is surprisingly cool).
 
-You can find my CV [here](/files/cv.pdf).
+You can find my CV [here](/files/2023.12.24_vita.pdf).
