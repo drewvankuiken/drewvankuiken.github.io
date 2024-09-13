@@ -11,4 +11,4 @@ I'm a fourth-year Econ Ph.D. student at [UNC - Chapel Hill](https://econ.unc.edu
 
 Outside of econ, I enjoy backcountry skiing, hiking, and, courtesy of my parents, Detroit-area sports teams.
 
-You can find my CV [here](/files/2023.05.09_vita.pdf). My email is [drew.van.kuiken@unc.edu](mailto:drew.van.kuiken@unc.edu).
+You can find my CV [here](/files/2024.09.13_vita.pdf). My email is [drew.van.kuiken@unc.edu](mailto:drew.van.kuiken@unc.edu).
