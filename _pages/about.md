@@ -9,6 +9,9 @@ redirect_from:
 ---
 I'm a fourth-year Econ Ph.D. student at [UNC - Chapel Hill](https://econ.unc.edu/graduate/). I'm interested in industrial organization, with a focus on innovation and market power. Methodologically, I've enjoyed reading and building structural models. 
 
-Outside of econ, I enjoy backcountry skiing, hiking, and, courtesy of my parents, Detroit-area sports teams.
+Outside of econ, I enjoy backcountry skiing, [sometimes](https://www.youtube.com/watch?v=DFX8g6chvzA&list=PLK-eutyZMAleRQVFBBS53fSko3FQTvsl0&index=7)-[weird](https://www.youtube.com/watch?v=I_NHVVR9XG4) [music](https://soundcloud.com/honchopgh/campout-mix-series-ccl), and, courtesy of my parents, Detroit-area sports teams.
 
 You can find my CV [here](/files/2024.09.13_vita.pdf). My email is [drew.van.kuiken@unc.edu](mailto:drew.van.kuiken@unc.edu).
+
+**New Stuff**
+- I'll be at the Southern Economic Association conference in Washington D.C. from November 23-25, 2024 (presenting on Sunday)
