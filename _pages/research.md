@@ -5,7 +5,7 @@ excerpt: ""
 author_profile: true
 ---
 ### Works in Progress
-- "Should I Stay or Should I Go? An Empirical Analysis of Consumer Behavior Using Airline Web-Traffic Data," *Conditionally accepted* at *Economics of Transportation*, [<a href="/files/ShouldIStayOrGo.pdf">link</a>]
+- "Should I Stay or Should I Go? An Empirical Analysis of Consumer Behavior Using Airline Web-Traffic Data," *Conditionally accepted* at *Economics of Transportation*, [<a href="/files/ShouldIStayOrGo.pdf">link</a>]  
   <small>With [Alex Marsh](https://alexmarsh.io/), [Garrett Scott](https://sites.google.com/view/garrettscott/home), and [Jon Williams](https://jonwms.web.unc.edu/)</small>  
   <details>
     <summary>Abstract</summary>
