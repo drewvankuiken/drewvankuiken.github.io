@@ -13,6 +13,7 @@ author_profile: true
   </details>
 
 ### Works in Progress
+- "Free Riding the Decarbonization Wave? Energy Transmission Design and Inefficient Entry"
 - "Product Quality and Consolidation"  
   <small>With [Nate Miller](https://www.nathanhmiller.org/), [Nick Rupp](https://myweb.ecu.edu/ruppn/) and [Jon Williams](https://jonwms.web.unc.edu/)</small>
 - "The Long and Short of Long- and Short-Duration Electricity Storage" 
