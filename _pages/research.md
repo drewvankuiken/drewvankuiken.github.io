@@ -16,5 +16,5 @@ author_profile: true
 - "Free Riding the Decarbonization Wave? Energy Transmission Design and Inefficient Entry"
 - "Product Quality and Consolidation"  
   <small>With [Nate Miller](https://www.nathanhmiller.org/), [Nick Rupp](https://myweb.ecu.edu/ruppn/) and [Jon Williams](https://jonwms.web.unc.edu/)</small>
-- "The Long and Short of Long- and Short-Duration Electricity Storage" 
+- "The Long and Short of Long- and Short-Duration Electricity Storage"  
   <small>With Alex Marsh, Hannah Rubinstein, Jon Williams, and [Andy Yates](https://tarheels.live/ajyates/andrew-yates/)</small>
