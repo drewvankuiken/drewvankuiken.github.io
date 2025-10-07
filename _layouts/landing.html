@@ -1,0 +1,22 @@
+---
+layout: compress
+---
+
+{% include base_path %}
+
+<!doctype html>
+<html lang="{{ site.locale | slice: 0, 2 }}" class="no-js">
+  <head>
+    {% include head.html %}
+    <link rel="stylesheet" href="{{ '/assets/css/landing.css' | relative_url }}">
+    {% include head/custom.html %}
+  </head>
+
+<body class="landing-body">
+    <main class="landing-main" role="main" id="top">
+      {{ content }}
+    </main>
+
+    {% include scripts.html %}
+  </body>
+</html>

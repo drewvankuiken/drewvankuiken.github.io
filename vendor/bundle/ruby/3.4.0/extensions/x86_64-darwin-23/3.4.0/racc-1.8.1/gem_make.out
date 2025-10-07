@@ -1,0 +1,19 @@
+current directory: /Users/drewvankuiken/Documents/GitHub/drewvankuiken.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+/usr/local/opt/ruby/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/drewvankuiken/Documents/GitHub/drewvankuiken.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251007-71821-93kc8y sitelibdir\=./.gem.20251007-71821-93kc8y clean
+
+current directory: /Users/drewvankuiken/Documents/GitHub/drewvankuiken.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251007-71821-93kc8y sitelibdir\=./.gem.20251007-71821-93kc8y
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+ld: warning: dylib (/usr/local/Cellar/ruby/3.4.6_1/lib/libruby.3.4.dylib) was built for newer macOS version (14.0) than being linked (13.3)
+
+current directory: /Users/drewvankuiken/Documents/GitHub/drewvankuiken.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251007-71821-93kc8y sitelibdir\=./.gem.20251007-71821-93kc8y install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20251007-71821-93kc8y/racc
+
+current directory: /Users/drewvankuiken/Documents/GitHub/drewvankuiken.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251007-71821-93kc8y sitelibdir\=./.gem.20251007-71821-93kc8y clean
