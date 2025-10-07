@@ -86,7 +86,7 @@ html {
 
 .section-profile .section-container {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 280px);
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 260px);
   align-items: center;
   column-gap: 3rem;
   row-gap: 2rem;
@@ -98,7 +98,7 @@ html {
 
 .profile-photo {
   width: 100%;
-  max-width: 300px;
+  max-width: 280px;
   height: auto;
   border-radius: 0;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.12);
