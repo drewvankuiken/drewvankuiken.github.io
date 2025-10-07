@@ -18,23 +18,11 @@ main:
 #  - title: "About Me"
 #    url: /about/
 
-  - title: "Home"
-    url: "#top"
-
   - title: "Research"
-    url: "#research"
+    url: '#research'
 
   - title: "Teaching"
-    url: "#teaching"
-
-  - title: "Contact"
-    url: "#contact"
-
-  - title: "CV"
-    url: /files/vita.pdf
-
-#  - title: "Teaching"
-#    url: /teaching/    
+    url: '#teaching'
 #    
 #  - title: "Links"
 #    url: /links/
