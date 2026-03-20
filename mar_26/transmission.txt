@@ -97,30 +97,35 @@ Image: figures/texas_eia_lines_counties.png, The Grid
 Image: figures/texas_backbone_counties.png, The Backbone
 
 # Slide(10):
+Header: Congestion costs and spread rising
 Image: figures/corridor_year_congestion_chart.png
 
 # Slide(11):
 Header: Upgrades
 Text:
 2019-2024:
-- $358$ backbone projects **{{accent|initiated}}**, $131$ related to transmission lines
-- **{{accent|Initiated}}** $t-1$ congestion: $10.1\%$
-- $217$ backbone projects **{{accent-2|completed}}**, $81$ related to transmission lines
-- **{{accent-2|Completed}}** $t-1$ congestion: $16.3\%$
+- $358$ backbone projects **{{accent-2|initiated}}**, $131$ related to transmission lines
+- **{{accent-2|Initiated}}** $t-1$ congestion: $10.1\%$
+- $217$ backbone projects **{{accent|completed}}**, $81$ related to transmission lines
+- **{{accent|Completed}}** $t-1$ congestion: $16.3\%$
 - All lines $t-1$ congestion: $11.2\%$
-
-Text: <<< Todo: map upgrades into transmission line capacity increases <<<
+Break: 1
+Text: I use **{{accent|completion}}** in this deck
 
 # Slide(12):
+Header: Upgrades non-monotone in congestion 
 Image: figures/lagged_stress_vs_upgrade_probability.png
 
 # Slide(13):
+Header: Spatial entry
 Image: figures/entry_map_six_panel.png
 
 # Slide(14):
+Header: Solar, not wind, entry responsive to congestion
 Image: figures/lagged_local_congestion_vs_entry_probability.png
 
 # Slide(15):
+Header: Both respond to upgrades
 Image: figures/lagged_nearby_upgrade_vs_entry_probability.png
 
 # Slide(16):
@@ -174,7 +179,7 @@ Text: [*Assumption*] reactance only varies by voltage, line length, number of li
 # Slide(22):
 Header: Demand
 Columns:
-Image: figures/ERCOT-Maps_Area-by-county.jpg, Demand data resolution at $wz$ level
+Image: figures/ERCOT-Maps_Area-by-county.jpg, Black lines indicate each $wz$
 ---
 Text: Yearly utility sales data for 88 utilities
 - 207/213 counties covered
@@ -239,10 +244,10 @@ Text: Note: once entered, firms make no decisions currently
 # Slide(30):
 Header: Entry Model - Entry to the Grid
 Text:
-- $N_{\tau}$ entrants appear, $N_{\tau}$ fixed to man number of counties of any tech entered in each $t$ in data + 1
+- $N_{\tau}$ entrants appear, $N_{\tau}$ fixed to max number of counties of any tech entered in each $t$ in data $+ 1$
 - Entry incurs $\nu_{r\tau t} + \varepsilon_{r\tau t}$
 - Depends on fixed costs and expectations over state transitions
-- States: local capacity of each tech type, grid-wide capacity of each tech type, capacity of key constraints
+- **States:** $q_{r\tau t}$ - local capacity of each tech type, $Q_{\tau t}$ - grid-wide capacity of each tech type, $k^l_r$ - capacity of key constraints
 - Implicitly, profits depend on how integrated region is. Higher $k$ means you compete against more firms, earn system lambda. Higher $q$ means congestion pricing lowers prices and profits
 
 # Slide(31):
@@ -254,6 +259,7 @@ Text:
 
 # Slide(32):
 Header: Condensing the state space
+Text:
 - MME helps with curse of dimensionality
 - Still ~80 counties with substantial generation, 300 transmission corridors
 - Proposal: using most frequently congestion lines, condense generation into ~40 regions, connected by X transmission lines, let grid evolve for each region
