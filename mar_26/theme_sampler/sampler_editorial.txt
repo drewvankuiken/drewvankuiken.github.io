@@ -1,0 +1,56 @@
+# METADATA:
+Title: Theme Sampler - Editorial
+Theme: editorial
+ShowSlideCount: true
+LogoUrl:
+
+# Slide(1):
+
+Header: Dissertation Theme Check
+Title: Interconnection Dissertation
+BigText: Theme: Editorial
+Text: This sampler uses the same content across every built-in ModernSlides theme so you can judge typography, spacing, and visual tone before building the March 26 deck.
+SmallText: Open the matching sampler files side by side or flip through them one by one.
+
+# Slide(2):
+
+Header: Narrative Slide
+BigText: Core question
+Text: How should transmission constraints, pricing rules, and reliability interventions interact when generators, loads, and policymakers face different information?
+Break: 0.6
+Text: 1. Build intuition quickly.
+2. Show the institutional mechanism clearly.
+3. End with a credible welfare comparison.
+Blockquote(Working standard): Clean slides should make the economic object obvious before the calibration details arrive.
+
+# Slide(3):
+
+Header: Layout Check
+Columns:
+Text: **Theory column**
+- Congestion rents
+- Dynamic incentives
+- Reliability tradeoffs
+---
+Text: **Empirics column**
+- ERCOT context
+- Counterfactual policy paths
+- Incidence and welfare
+---
+BigText: ||| Compare balance, whitespace, and hierarchy |||
+
+# Slide(4):
+
+Header: Table Check
+Text: Inline table:
+Table:
+Case & Price dispersion & Curtailment & Welfare
+---
+Static rule & 0.31 & 0.12 & 100
+---
+Network expansion & 0.24 & 0.09 & 105
+---
+Dynamic pricing & 0.18 & 0.06 & 111
+Break: 0.5
+Text: LaTeX-backed table:
+TexTable: theme_sampler_table.tex

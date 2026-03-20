@@ -1,0 +1,260 @@
+# METADATA:
+Title: Access Fees, Congestion Pricing, and Strategic Entry on the Electric Grid
+Theme: style-example
+ShowSlideCount: true
+LogoUrl:
+
+# Slide(1):
+
+Title: Entry Fees, Congestion Pricing, and Strategic Entry on the Electric Grid
+Text: Drew Van Kuiken
+TinyText: March 25, 2026 • IO Workshop
+
+# Slide(2):
+Header: Motivation
+Text: On a congestible network, two options to discipline entry: 
+1. entry fees
+2. congestion prices
+
+Break: 1
+Text:**{{accent|How do entry fee and congestion price policy shift the spatial allocation of generators on the Texas grid? What are the welfare consequences?}}**
+
+# Slide(3):
+Header: Incentive-compatible policy
+Columns:
+Text: Before today:
+- Demand flat
+- Generation outside the city
+- Grid as buffer for demand shocks
+---
+Text: Moving forward:
+- Demand growth & data centers
+- Renewables
+- Congestion
+
+# Slide(4):
+Header: How does the grid work? 
+
+Text:
+<<< Congestion prices <<<
+<<<- No congestion → marginal generator sets price $\lambda$ <<<
+<<<- Upstream of congestion → $P_r < \lambda$ <<<
+<<<- Downstream of congestion → $P_r > \lambda$ <<<
+Break: 1
+Text:
+<<< Entry fees <<<
+<<<- In TX, none <<<
+<<<- In counterfactuals, will allow this to vary <<<
+
+# Slide(5):
+Header: How does the grid work?
+Columns:
+Text:
+Transmission upgrades
+- Centrally planned
+- Paid for by ratepayers
+- CREZ, then rare
+----
+BigText: ||| ⇒ |||
+---
+Text:
+Generator entry **{{accent-2|strategic}}**:
+- Transmission a public good
+- Congestion matters
+- Path-dependent upgrades
+----
+
+BigText: {{accent|Missing market for transmission}}
+
+# Slide(6):
+Header: This paper
+Text:
+- Equilibrium location choices function of **{{accent|fixed costs}}**, **{{accent-2|future profits}}**
+- **{{accent-2|Future profits}}** function of dispatch, upgrades
+- Engineering model captures dispatch
+- IV regression captures upgrade behavior
+- Expected profits recover **{{accent|fixed cost}}** threshold for entry
+- Eventually: counterfactuals. Entry fees, welfare-maximizing policy mix
+
+# Slide(7):
+Header: Today
+Text:
+- Descriptive evidence
+- Dispatch model
+- Plans for upgrade model, entry model
+Break: 1
+Last time: neither congestion price nor entry fee policies in place yield welfare-maximizing entry
+
+# Slide(8):
+BackgroundColor: accent
+BigText: ||| Descriptive evidence |||
+
+# Slide(9):
+Header: Setting
+Columns:
+Image: figures/texas_eia_lines_counties.png, The Grid
+---
+Image: figures/texas_backbone_counties.png, The Backbone
+
+# Slide(10):
+Image: figures/corridor_year_congestion_chart.png
+
+# Slide(11):
+Header: Upgrades
+Text:
+2019-2024:
+- $358$ backbone projects **{{accent|initiated}}**, $131$ related to transmission lines
+- **{{accent|Initiated}}** $t-1$ congestion: $10.1\%$
+- $217$ backbone projects **{{accent-2|completed}}**, $81$ related to transmission lines
+- **{{accent-2|Completed}}** $t-1$ congestion: $16.3\%$
+- All lines $t-1$ congestion: $11.2\%$
+
+Text: <<< Todo: map upgrades into transmission line capacity increases <<<
+
+# Slide(12):
+Image: figures/lagged_stress_vs_upgrade_probability.png
+
+# Slide(13):
+Image: figures/entry_map_six_panel.png
+
+# Slide(14):
+Image: figures/lagged_local_congestion_vs_entry_probability.png
+
+# Slide(15):
+Image: figures/lagged_nearby_upgrade_vs_entry_probability.png
+
+# Slide(16):
+Text: HOLD for predicted profits and probability of entry
+
+# Slide(17): 
+Text: HOLD for profits, prices, congestion under counterfactually different transmission investment
+
+# Slide(18):
+BackgroundColor: accent
+BigText: ||| Dispatch Model |||
+
+# Slide(19):
+Header: Grid Operator's problem
+Text: 
+**Goal**: least-cost dispatch
+- Generators submit offer curves 
+- Demand forecasted
+- Grid topology
+- Process runs every hour
+
+# Slide(20):
+Header: Grid Operator's Problem
+Text:
+$ \begin{multline*}
+    \mathcal{L} = \sum_{r} \int_0^{q_{r\tau th}} c_\tau(x) dx + 
+        \lambda_{th} (\sum_r D_{rth} - q_{rth}) + \\
+        \sum_l \mu^l_{th} (k^l_t - \sum_r (q_{rth}-D_{rth}) SF^l_r)
+\end{multline*} $
+
+Columns:
+- $c_{\tau}$ → Data
+- $D_{rth}$ → Data
+- $\mu^l_{th}$ → Data*
+---
+- $q_{r\tau th}$ → Choice Var.
+- $\lambda_{th}$ → Model Output
+---
+- $k^l_{th}$ → Parameter
+- $SF^l_r$ → Parameter*
+
+# Slide(21):
+Header: From Grid to graph
+Columns:
+Image: figures/dallas_six_county_backbone_map.png
+---
+Image: figures/dallas_six_county_backbone_graph.png
+
+Text: [*Assumption*] reactance only varies by voltage, line length, number of lines between counties
+
+# Slide(22):
+Header: Demand
+Columns:
+Image: figures/ERCOT-Maps_Area-by-county.jpg, Demand data resolution at $wz$ level
+---
+Text: Yearly utility sales data for 88 utilities
+- 207/213 counties covered
+- $D_r = w_r * D_{wz}$
+- $w_r$ calculated as share of $wz$ sales attributable to utilities serving $r$
+
+# Slide(22):
+Header: Supply Curves
+Image: figures/county_supply_curve_brazoria_20250301_1600.png
+
+# Slide(23):
+Header: Capacity
+Text:
+- $k^l_t$ assumed by voltage unless higher capacity limit appears in shadow price data
+- New lines completed via upgrade process → add flat capacity bump to corridor
+
+# Slide(24):
+Header: Fit
+Columns:
+Image: figures/lmp_fit_scatter_1.png, A good period
+---
+Image: figures/lmp_fit_scatter_2.png, Less good
+
+# Slide(25):
+Header: Next Steps 
+Text:
+1. Parallelize dispatch model
+2. Iterative capacity bounds
+3. Include batteries in the model
+4. Profit experiments (HOLDs in descriptive section)
+
+# Slide(26):
+BackgroundColor: accent
+BigText: ||| Upgrade, Entry Models |||
+
+# Slide(27):
+Header: Modeling Upgrade Policy function
+Text: Upgrades a function of **{{accent|line stress}}**, line characteristics, FEs
+- **{{accent|line stress}}** is endogenous
+- Potential shifters: {forecast errors (load, renewable supply), unexpected outages} $\times$ line exposure to shock
+Break: 1
+Text: Instruments a little weak. How necessary? 
+
+# Slide(28):
+Header: Entry Model - Timing
+Text: 
+1. $N_{\tau}$ appears. Enter or die. 
+1a. If enter, choose county
+2. Operator views last period congestion, makes upgrade decisions
+3. Production occurs for $h=4,380$ hours in half-year $t$ 
+- Unclear if there will be exit yet, need to review data 
+
+# Slide(29):
+Header: Entry Model - Production and Grid Upgrades
+Text: 
+- Generators aggregated to technology level ($q_{r\tau th}$)
+- Each county-tech submits marginal costs to operator. Dispatch. 
+- Operator runs grid upgrade model
+Break: 1
+Text: Note: once entered, firms make no decisions currently
+
+# Slide(30):
+Header: Entry Model - Entry to the Grid
+Text:
+- $N_{\tau}$ entrants appear, $N_{\tau}$ fixed to man number of counties of any tech entered in each $t$ in data + 1
+- Entry incurs $\nu_{r\tau t} + \varepsilon_{r\tau t}$
+- Depends on fixed costs and expectations over state transitions
+- States: local capacity of each tech type, grid-wide capacity of each tech type, capacity of key constraints
+- Implicitly, profits depend on how integrated region is. Higher $k$ means you compete against more firms, earn system lambda. Higher $q$ means congestion pricing lowers prices and profits
+
+# Slide(31):
+Header: equilibrium
+Text:
+- Entrants track own region state vars $q_{r\tau t}, k^l_{rt}$. Assume $k$ evolves according to own region quantity and aggregate quantities only
+- Entrants assume aggregate quantities evolve according to AR-1 process
+- Entry forms Moment-Based Markov Equilibrium (MME) (**Ifrach and Weintraub, 2017)
+
+# Slide(32):
+Header: Condensing the state space
+- MME helps with curse of dimensionality
+- Still ~80 counties with substantial generation, 300 transmission corridors
+- Proposal: using most frequently congestion lines, condense generation into ~40 regions, connected by X transmission lines, let grid evolve for each region
+- Problem parallelizable

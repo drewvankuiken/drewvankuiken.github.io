@@ -1,0 +1,116 @@
+Outline for IO Workshop presentation, 3/25/26
+50 min
+Interconnection and Transmission idea
+Numbers indicate new slides
+
+Section: Motivation
+1. Congestible network. Discipline entry using access charges or congestion prices. 
+	⁃	Shifts location choices, infrastructure upgrades, congestion externalities
+	⁃	Voiceover: access charges improve infrastructure, congestion prices impose congestion externalities
+	⁃	In TX, grid uses only congestion pricing. Elsewhere, mostly access charges
+On click -
+How do access charge and congestion policy shift the spatial allocation of generators in the Texas electrical grid? 
+2. Why Important? 
+	⁃	Grid is underbuilt
+	⁃	Demand is growing
+	⁃	Data centers 
+	⁃	New grid policy can and should meet these challenges
+3. How does grid work? 
+	⁃	Transmission backbone
+	⁃	Nodal pricing/congestion pricing
+	⁃	Transmission upgrades
+4. This paper
+	⁃	Equilibrium location choices are a function of fixed costs of entry and expected future profits
+	⁃	Expected future profits depend on dispatch, grid upgrades
+	⁃	Engineering model captures dispatch
+	⁃	IV regression captures grid upgrade behavior
+	⁃	Expected profits recover fixed cost threshold for entry
+	⁃	Eventually: counterfactuals. Cover entry under access charges, welfare-maximizing combination
+5. Today
+	⁃	reduced form evidence --> why do we need a model?
+	⁃	dispatch model
+	⁃	plans for upgrade model, entry model
+Last time: neither congestion prices nor access charge policies today yield welfare-maximizing entry
+
+Section: Reduced Form Evidence. Note: section intended to be ~entirely figures and tables. 
+6. Upgrades are rare, weakly respond to congestion
+	⁃	Congestion costs year over year + share of corridors with stress above threshold [TABLE] [DONE]
+	⁃	Upgrades by type + upgrade rate among stressed corridors [TABLE]  [DONE]
+	⁃	Binned plot: lagged stress, yearly upgrade probability [DONE]
+7. Congestion and upgrades distort entry
+	⁃	Entry map. Overlay with heavily congested corridors? Break out by technology? Experiment with this. [DONE]
+	⁃	Binned plot: lagged local congestion and next period entry (by tech?) [DONE]
+	⁃	Binned plot: lagged nearby upgrade and next period entry (by tech?) [DONE]
+	⁃	Predicted profits (x axis, based on dispatch model), probability of entry (y axis)
+	⁃	Event study: entry before and after nearby upgrade, corridor stress before and after nearby upgrade [DONE, bad]
+8. Upgrade placement reshapes future entry incentives
+	⁃	Profits, prices, congestion under counterfactually different transmission investment
+
+Section: Dispatch model
+9. Grid operator’s problem
+	⁃	Lagrangian
+	⁃	Highlight each term, say whether data is available or not
+	⁃	Available: Transmission grid (EIA), Generator locations (ERCOT), Offer curves (ERCOT), Demand (EIA), \mu (ERCOT, shadow prices)
+	⁃	Missing: reactances, capacity, mapping from \mu to grid
+[BUTTON TO APPENDIX]: discussion of how I mapped \mu to grid
+10. Reducing grid to network
+	⁃	county-county transmission graph
+	⁃	[GRAPHIC] picture of Texas grid —> picture of graph (math version, made using powerpoint?) representing that grid
+	⁃	map shadow prices to graph
+	⁃	reactances based on topology. [ASSUMPTION] reactance is 0.32 ohm/km, scaled by voltage, length of line, and number of lines connecting two counties
+11. Economics of grid
+	⁃	Demand weighted equally across all counties within utility territory
+	⁃	[MAP] utility territories
+	⁃	Initial guess of capacity, shadow price overrule 
+	⁃	County level cost curves aggregated from SCED data
+12. Fit
+	⁃	Using initial capacity guess, compare model implied $ to actual $
+	⁃	fit stats so far
+	⁃	[TODO] iterate capacity to improve fit
+
+Section: Upgrade model
+13. Upgrade model
+	⁃	Upgrade = f(line stress, line characteristics, FEs)
+	⁃	Line stress endogenous
+	⁃	Shifters: {forecast errors (load, renewable supply), unexpected dispatchable outages} x line exposure to shock
+
+Section: Entry model
+14. Timing
+	⁃	A random number of projects of each technology type appear. Enter or die. If enter, choose county
+	⁃	The grid operator views last period congestion, makes upgrade decisions
+	⁃	Production occurs for h=4,380 hours in t=half-year
+	⁃	Not sure if there will be exit yet, need to review how much exit happens in the data
+15. Production & Grid Upgrades
+	⁃	Generators aggregated to technology level
+	⁃	Each technology submits marginal costs to grid operator, grid operator runs dispatch model
+	⁃	Grid operator runs grid upgrade model
+	⁃	Note: once entered, firms make no decisions currently
+16. Entry
+	⁃	N_{\tau} entrants show up each period, where N_{\tau} is fixed to the max number of counties of any technology type entered in each half-year + 1
+	⁃	Entering incurs fixed cost \nu_{r\tau t} (q) + \varepsilon_{r\tau t} (unobserved fixed costs)
+	⁃	Entry depends on fixed costs and expectations about state transitions. States include: local capacity of each technology type, grid-wide capacity of each technology type, capacity of key constraints
+	⁃	Implicitly profits depend on how integrated your region is: higher k means you compete against more firms, earn system lambda. Higher q means congestion pricing hits, lower profits.
+17. Equilibrium
+	⁃	Entrants track own region state variables q_{r\tau t}, k^l_{rt}. Assume k solves according to own region quantity and aggregate quantities only.
+	⁃	Entrants assume aggregate quantities evolve according to AR-1 process
+	⁃	Entry forms a moment based Markov equilibrium (MME, Ifranch & Weintraub 2018)
+18. Condensing the state space
+	⁃	MME helps with curse of dimensionality
+	⁃	Still ~80 counties with substantial generation, 300 transmission corridors
+	⁃	Proposal: using most frequently congested lines, condense generation into ~40 regions, connected by X transmission lines, let grid evolve for each region
+	⁃	Problem parallelizable, which is helpful
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
