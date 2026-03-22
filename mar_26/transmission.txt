@@ -6,7 +6,7 @@ LogoUrl:
 
 # Slide(1):
 
-Title: Entry Fees, Congestion Pricing, and Strategic Entry on the Electric Grid
+Title: Strategic Entry on the Electric Grid
 Text: Drew Van Kuiken
 TinyText: March 25, 2026 • IO Workshop
 
@@ -58,7 +58,7 @@ Transmission upgrades
 BigText: ||| ⇒ |||
 ---
 Text:
-Generator entry **{{accent-2|strategic}}**:
+Generator entry **{{accent|strategic}}**:
 - Transmission a public good
 - Congestion matters
 - Path-dependent upgrades
@@ -79,15 +79,14 @@ Text:
 # Slide(7):
 Header: Today
 Text:
-- Descriptive evidence
+- Data & Descriptive evidence
 - Dispatch model
 - Plans for upgrade model, entry model
-Break: 1
-Last time: neither congestion price nor entry fee policies in place yield welfare-maximizing entry
+*Last time:* neither congestion price nor entry fee policies in place yield welfare-maximizing entry
 
 # Slide(8):
 BackgroundColor: accent
-BigText: ||| Descriptive evidence |||
+BigText: ||| Data & Descriptive evidence |||
 
 # Slide(9):
 Header: Setting
@@ -96,43 +95,58 @@ Image: figures/texas_eia_lines_counties.png, The Grid
 ---
 Image: figures/texas_backbone_counties.png, The Backbone
 
+# Slide(22):
+Header: Demand
+Columns:
+Image: figures/ERCOT-Maps_Area-by-county.jpg, Black lines indicate each $wz$
+---
+Text: + Yearly utility sales data for 88 utilities
+- 207/213 counties covered
+- $D_r = w_r * D_{wz}$
+- $w_r$ calculated as share of $wz$ sales attributable to utilities serving $r$
+
+# Slide(22):
+Header: Supply Curves
+Image: figures/county_supply_curve_brazoria_20250301_1600.png
+
+# Slide(13):
+Header: Entry Panels
+Image: figures/entry_map_six_panel.png
+
 # Slide(10):
 Header: Congestion costs and spread rising
 Image: figures/corridor_year_congestion_chart.png
 
+# Slide(14):
+Header: Objects of interest
+Text: Want to understand: 
+1. How rare are upgrades? Do they respond to congestion?
+2. Entry a function of upgrades and/or congestion?
+3. Is path-dependence relevant here? [*in progress*]
+
 # Slide(11):
-Header: Upgrades
+Header: How rare are upgrades? Do they respond to congestion?
 Text:
 2019-2024:
-- $358$ backbone projects **{{accent-2|initiated}}**, $131$ related to transmission lines
-- **{{accent-2|Initiated}}** $t-1$ congestion: $10.1\%$
-- $217$ backbone projects **{{accent|completed}}**, $81$ related to transmission lines
-- **{{accent|Completed}}** $t-1$ congestion: $16.3\%$
+- $185$ backbone projects **{{accent-2|initiated}}**
+- **{{accent-2|Initiated}}** $t-1$ congestion: $11.0\%$
+- $119$ backbone projects **{{accent|completed}}**
+- **{{accent|Completed}}** $t-1$ congestion: $10.3\%$
 - All lines $t-1$ congestion: $11.2\%$
 Break: 1
-Text: I use **{{accent|completion}}** in this deck
+Text: I use **{{accent|completion}}** in this paper
 
 # Slide(12):
-Header: Upgrades non-monotone in congestion 
+Header: How rare are upgrades? Do they respond to congestion?
 Image: figures/lagged_stress_vs_upgrade_probability.png
 
-# Slide(13):
-Header: Spatial entry
-Image: figures/entry_map_six_panel.png
-
-# Slide(14):
-Header: Solar, not wind, entry responsive to congestion
-Image: figures/lagged_local_congestion_vs_entry_probability.png
-
 # Slide(15):
-Header: Both respond to upgrades
+Header: Entry a function of congestion and/or upgrades?
 Image: figures/lagged_nearby_upgrade_vs_entry_probability.png
 
-# Slide(16):
-Text: HOLD for predicted profits and probability of entry
-
-# Slide(17): 
-Text: HOLD for profits, prices, congestion under counterfactually different transmission investment
+# Slide(14):
+Header: Entry a function of congestion and/or upgrades?
+Image: figures/lagged_local_congestion_vs_entry_probability.png
 
 # Slide(18):
 BackgroundColor: accent
@@ -146,26 +160,31 @@ Text:
 - Demand forecasted
 - Grid topology
 - Process runs every hour
+Break: 1
+Text:
+**My Goal**: recover grid capacity for entry model
+- Voltage =/= capacity
+- Power flows on a changing grid
 
 # Slide(20):
 Header: Grid Operator's Problem
 Text:
 $ \begin{multline*}
     \mathcal{L} = \sum_{r} \int_0^{q_{r\tau th}} c_\tau(x) dx + 
-        \lambda_{th} (\sum_r D_{rth} - q_{rth}) + \\
+        \lambda_{th} (\sum_r (D_{rth} - q_{rth})) + \\
         \sum_l \mu^l_{th} (k^l_t - \sum_r (q_{rth}-D_{rth}) SF^l_r)
 \end{multline*} $
 
 Columns:
-- $c_{\tau}$ → Data
+- $c_{\tau}$ → Data*
 - $D_{rth}$ → Data
-- $\mu^l_{th}$ → Data*
 ---
 - $q_{r\tau th}$ → Choice Var.
 - $\lambda_{th}$ → Model Output
+- $\mu^l_{th}$ → Model Output†
 ---
 - $k^l_{th}$ → Parameter
-- $SF^l_r$ → Parameter*
+- $SF^l_r$ → Parameter†
 
 # Slide(21):
 Header: From Grid to graph
@@ -176,25 +195,36 @@ Image: figures/dallas_six_county_backbone_graph.png
 
 Text: [*Assumption*] reactance only varies by voltage, line length, number of lines between counties
 
-# Slide(22):
-Header: Demand
-Columns:
-Image: figures/ERCOT-Maps_Area-by-county.jpg, Black lines indicate each $wz$
----
-Text: Yearly utility sales data for 88 utilities
-- 207/213 counties covered
-- $D_r = w_r * D_{wz}$
-- $w_r$ calculated as share of $wz$ sales attributable to utilities serving $r$
-
-# Slide(22):
-Header: Supply Curves
-Image: figures/county_supply_curve_brazoria_20250301_1600.png
-
 # Slide(23):
-Header: Capacity
+Header: Recovering Capacities
 Text:
-- $k^l_t$ assumed by voltage unless higher capacity limit appears in shadow price data
-- New lines completed via upgrade process → add flat capacity bump to corridor
+- Initial $\bar{k}^l$: voltage
+- Capacity mapping:
+$k^l_t(\theta) = k^l_0 + \sum_{p=1}^P A_{lp} 1\{t\geq t_p\}\delta_{g(p)}$
+- Parameters:
+$\theta = (\{k^l_0\}_{l=1}^L,\{\delta_{g}\}_{g=1}^G) \, \Theta = \{k^l_0\geq 0 \forall l, \delta_{g}\geq 0 \forall g \}$
+
+# Slide(24):
+Header: Recovering Capacities
+Ref:recovering_capacities
+Text: Objective:
+$\begin{align*}
+\hat{\theta} = \arg\min_{\theta \in \Theta} 
+    (m - \hat{m}(\theta))' W & (m - \hat{m}(\theta)) + \\
+    & \lambda_0 \sum_{l=1}^L ((k^l_0 - \bar{k}^l)/\bar{k}^l)^2 + \lambda_1 \sum_g \delta_g^2
+\end{align*}$
+Break: 1
+Columns(top): 
+**Moments**
+1. Binding frequency
+2. Mean shadow price
+3. Mean price spreads
+4. Pre/post changes around upgrades
+---
+**Upgrade Groups**
+1. New corridor
+2. Existing corridor expansion
+3. Station expansion >>> +++tech_moments[Tech Moments]+++ >>>
 
 # Slide(24):
 Header: Fit
@@ -206,10 +236,10 @@ Image: figures/lmp_fit_scatter_2.png, Less good
 # Slide(25):
 Header: Next Steps 
 Text:
-1. Parallelize dispatch model
-2. Iterative capacity bounds
-3. Include batteries in the model
-4. Profit experiments (HOLDs in descriptive section)
+1. Move everything to cluster, use actual cost curves
+2. Include batteries in the model
+3. Track emissions for welfare
+4. Assess path-dependence
 
 # Slide(26):
 BackgroundColor: accent
@@ -226,8 +256,7 @@ Text: Instruments a little weak. How necessary?
 # Slide(28):
 Header: Entry Model - Timing
 Text: 
-1. $N_{\tau}$ appears. Enter or die. 
-1a. If enter, choose county
+1. $N_{\tau}$ appears. Enter or die. If enter, choose county
 2. Operator views last period congestion, makes upgrade decisions
 3. Production occurs for $h=4,380$ hours in half-year $t$ 
 - Unclear if there will be exit yet, need to review data 
@@ -264,3 +293,13 @@ Text:
 - Still ~80 counties with substantial generation, 300 transmission corridors
 - Proposal: using most frequently congestion lines, condense generation into ~40 regions, connected by X transmission lines, let grid evolve for each region
 - Problem parallelizable
+
+# Slide(33):
+Ref:tech_moments
+Text: **Moments**
+Let $\mu^{obs}_{lt}$ denote observed shadow prices for $l$. 
+Let $s^{obs}_{lt} = |\lambda^{obs}_{r(l)t} - \lambda^{obs}_{r^\prime(l) t}|$ with corresponding model moments, $r$ and $r^\prime$ connected counties. Let $\mathcal{T}_l = \{t :  \mu^{obs}_{lt} \text{ in top 20% >0 for corridor } l\}$
+1. $m^{1,obs}_l = \frac{1}{T} \sum_{t \in \mathcal{T}_l} 1\{\mu_{lt} > 0\}$, for observed and model data
+2. $m^{2,obs}_l = \frac{\sum_{t \in \mathcal{T}_l} \mu_{lt}1\{\mu_{lt}>0\}}{\sum_{t \in \mathcal{T}_l} 1\{\mu_{lt}>0\}}$
+3. $m^{3,obs}_l = \frac{1}{|\mathcal{T}_l|} \sum_{t \in \mathcal{T}_l} s_{lt}$, for observed and model data
+4. $m^{4,obs}_g = \frac{1}{|P_g|}\sum_{p:g(p)=g}[\frac{1}{|\mathcal{T}^{\text{post}}_p|}\sum_{t \in \mathcal{T}^{\text{post}}_p} \mu_{l(p)t} - \frac{1}{|\mathcal{T}^{\text{pre}}_p|}\sum_{t \in \mathcal{T}^{\text{pre}}_p} \mu_{l(p)t}]$, for observed and model data >>> +++recovering_capacities[Back]+++ >>>
