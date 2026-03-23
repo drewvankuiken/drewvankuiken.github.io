@@ -1,0 +1,28 @@
+\begin{table}[htbp]
+\centering
+\caption{2024 panel capacities versus window-regression capacities}
+\label{tab:panel-2024-capacity-comparison}
+\begin{tabular}{lrrr}
+\toprule
+Corridor & Window Mean 2024 (MW) & Panel 2024 (MW) & Difference (MW) \\
+\midrule
+\texttt{CHAMBERS\_\_HARRIS} & 1200.00 & 2133.33 & 933.33 \\
+\texttt{CROCKETT\_\_PECOS} & 2400.00 & 3233.33 & 833.33 \\
+\texttt{HIDALGO\_\_STARR} & 1200.00 & 1966.67 & 766.67 \\
+\texttt{FORT BEND\_\_HARRIS} & 8400.00 & 9066.67 & 666.67 \\
+\texttt{BRAZORIA\_\_GALVESTON} & 1253.11 & 1878.73 & 625.62 \\
+\texttt{STARR\_\_ZAPATA} & 1200.00 & 1800.00 & 600.00 \\
+\texttt{BRAZORIA\_\_FORT BEND} & 2400.00 & 3000.00 & 600.00 \\
+\texttt{WEBB\_\_ZAPATA} & 2400.00 & 3000.00 & 600.00 \\
+\texttt{DALLAS\_\_TARRANT} & 4800.00 & 5340.00 & 540.00 \\
+\texttt{PECOS\_\_TERRELL} & 800.00 & 1300.00 & 500.00 \\
+\midrule
+Average difference, all corridors &  &  & 82.56 \\
+Average difference, $\Delta > 0$ &  &  & 200.28 \\
+\bottomrule
+\end{tabular}
+\vspace{0.5em}
+\begin{minipage}{0.92\linewidth}
+\footnotesize Notes: Window mean 2024 is the simple average of the six 2024 window Step 5 capacity estimates. Panel 2024 is the estimated 2024 corridor capacity from the project-driven capacity panel run in \texttt{temp/capacity\_panel\_runs/all\_2024\_check}. Top corridors are ranked by the panel-minus-window mean capacity difference.
+\end{minipage}
+\end{table}

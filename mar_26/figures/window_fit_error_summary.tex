@@ -1,0 +1,27 @@
+\begin{table}[htbp]
+\centering
+\caption{Window-fit error summary}
+\label{tab:window-fit-error-summary}
+\begin{tabular}{lrrrr}
+\toprule
+Sample & Avg. MAE & Avg. Demeaned County MAE & Avg. MAE / Actual $\lambda$ & Avg. County MAE / Actual LMP \\
+\midrule
+All windows & 45.41 & 9.47 & 57.6\% & 62.2\% \\
+\midrule
+2019 & 26.00 & 3.81 & 50.5\% & 55.0\% \\
+2020 & 7.91 & 4.15 & 36.1\% & 43.5\% \\
+2021 & 106.09 & 7.99 & 46.5\% & 49.8\% \\
+2022 & 39.77 & 11.72 & 53.5\% & 56.5\% \\
+2023 & 87.31 & 21.07 & 109.9\% & 111.2\% \\
+2024 & 14.41 & 6.79 & 53.0\% & 59.8\% \\
+2025 & 14.40 & 8.30 & 45.5\% & 51.8\% \\
+\midrule
+Best-MAE window (20200101_20200229) & 4.68 & 4.11 & 27.7\% & 38.1\% \\
+Worst-MAE window (20210101_20210228) & 564.80 & 18.63 & 76.9\% & 77.5\% \\
+\bottomrule
+\end{tabular}
+\vspace{0.5em}
+\begin{minipage}{0.92\linewidth}
+\footnotesize Notes: MAE refers to system-price MAE from the historical-fit outputs. Demeaned county MAE is the county-level demeaned LMP MAE. Actual $\lambda$ is the mean absolute observed system price in a window. Actual LMP is the mean absolute observed county LMP in a window. Year rows are simple averages across windows starting in that year.
+\end{minipage}
+\end{table}

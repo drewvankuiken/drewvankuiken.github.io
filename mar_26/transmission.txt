@@ -153,14 +153,17 @@ Text: I use **{{accent|completion}}** in this paper
 # Slide(12):
 Header: How rare are upgrades? Do they respond to congestion?
 Image: figures/lagged_stress_vs_upgrade_probability.png
+Text: Upgrades sort of respond to congestion, surprising shape
 
 # Slide(15):
 Header: Entry a function of congestion and/or upgrades?
 Image: figures/lagged_nearby_upgrade_vs_entry_probability.png
+Text: Entry is probably a function of upgrades
 
 # Slide(14):
 Header: Entry a function of congestion and/or upgrades?
 Image: figures/lagged_local_congestion_vs_entry_probability.png
+Text: Entry not really a function of congestion, though counterfactual unclear
 
 # Slide(18):
 BackgroundColor: accent
@@ -215,7 +218,7 @@ Header: Initial Fit
 Text:
 - Initialize $\bar{k}^l$: voltage
 - Update on shadow price data only
-- Avg Mean Absolute Error: \$45 (58% of avg $\lambda$)
+- Avg Mean Absolute Error (MAE): \$45 (58% of avg $\lambda$)
 - Best year: 2020 (avg MAE of \$8)
 - Worst year: 2021 (avg MAE of \$106)
 - Capturing some spatial variation: avg demeaned county MAE of \$9
