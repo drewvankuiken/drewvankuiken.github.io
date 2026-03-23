@@ -12,15 +12,26 @@ TinyText: March 25, 2026 • IO Workshop
 
 # Slide(2):
 Header: Motivation
-Text: On a congestible network, two options to discipline entry: 
-1. entry fees
-2. congestion prices
+Columns:
+Image: figures/bike_lane.jpg
+---
+Text:
+Options:
+1. Build | enough accidents?
+2. Developer builds their own bridge
+3. Bridges to nowhere
 
-Break: 1
+# Slide(3):
+Header: Research Question
+Text: Problem harder on the grid: 
+- Grid is scarce, congestion and upgrade costs hard to target
+- Location choices are strategic
+- Two policy instruments: **{{accent|entry fees}}** and **{{accent-2|congestion prices}}**
+Break:1
 Text:**{{accent|How do entry fee and congestion price policy shift the spatial allocation of generators on the Texas grid? What are the welfare consequences?}}**
 
 # Slide(3):
-Header: Incentive-compatible policy
+Header: Why Now?
 Columns:
 Text: Before today:
 - Demand flat
@@ -36,15 +47,18 @@ Text: Moving forward:
 Header: How does the grid work? 
 
 Text:
-<<< Congestion prices <<<
-<<<- No congestion → marginal generator sets price $\lambda$ <<<
-<<<- Upstream of congestion → $P_r < \lambda$ <<<
-<<<- Downstream of congestion → $P_r > \lambda$ <<<
+<<< 
+Congestion prices
+- Upstream of congestion → price goes down
+- Downstream of congestion → price goes up 
+<<<
 Break: 1
 Text:
-<<< Entry fees <<<
-<<<- In TX, none <<<
-<<<- In counterfactuals, will allow this to vary <<<
+<<< 
+Entry fees
+- In TX, none
+- In counterfactuals, will allow this to vary 
+<<<
 
 # Slide(5):
 Header: How does the grid work?
@@ -168,6 +182,7 @@ Text:
 
 # Slide(20):
 Header: Grid Operator's Problem
+Break:2
 Text:
 $ \begin{multline*}
     \mathcal{L} = \sum_{r} \int_0^{q_{r\tau th}} c_\tau(x) dx + 
@@ -176,7 +191,7 @@ $ \begin{multline*}
 \end{multline*} $
 
 Columns:
-- $c_{\tau}$ → Data*
+- $c_{\tau}$ → Data
 - $D_{rth}$ → Data
 ---
 - $q_{r\tau th}$ → Choice Var.
@@ -184,7 +199,7 @@ Columns:
 - $\mu^l_{th}$ → Model Output†
 ---
 - $k^l_{th}$ → Parameter
-- $SF^l_r$ → Parameter†
+- $SF^l_r$ → Parameter
 
 # Slide(21):
 Header: From Grid to graph
@@ -194,6 +209,16 @@ Image: figures/dallas_six_county_backbone_map.png
 Image: figures/dallas_six_county_backbone_graph.png
 
 Text: [*Assumption*] reactance only varies by voltage, line length, number of lines between counties
+
+# Slide(23):
+Header: Initial Fit
+Text:
+- Initialize $\bar{k}^l$: voltage
+- Update on shadow price data only
+- Avg Mean Absolute Error: \$45 (58% of avg $\lambda$)
+- Best year: 2020 (avg MAE of \$8)
+- Worst year: 2021 (avg MAE of \$106)
+- Capturing some spatial variation: avg demeaned county MAE of \$9
 
 # Slide(23):
 Header: Recovering Capacities
@@ -218,20 +243,23 @@ Columns(top):
 **Moments**
 1. Binding frequency
 2. Mean shadow price
-3. Mean price spreads
+3. Mean/tail price spreads
 4. Pre/post changes around upgrades
 ---
 **Upgrade Groups**
 1. New corridor
 2. Existing corridor expansion
-3. Station expansion >>> +++tech_moments[Tech Moments]+++ >>>
+3. Station expansion >>> +++tech_moments[Moment Definitions]+++ >>>
 
 # Slide(24):
 Header: Fit
-Columns:
-Image: figures/lmp_fit_scatter_1.png, A good period
----
-Image: figures/lmp_fit_scatter_2.png, Less good
+Text:
+Estimated for 2024, using average supply curves:
+- Avg MAE \$45, avg demeaned county MAE \$12
+- Avg capacity difference: 82MW
+- Avg conditional on capacity being different: 200MW
+- Ex: Chambers ↔ Harris - $k^l_0 = 2133$MW, $\bar{k}^l = 1200$MW
+
 
 # Slide(25):
 Header: Next Steps 
@@ -256,8 +284,8 @@ Text: Instruments a little weak. How necessary?
 # Slide(28):
 Header: Entry Model - Timing
 Text: 
-1. $N_{\tau}$ appears. Enter or die. If enter, choose county
-2. Operator views last period congestion, makes upgrade decisions
+1. $N_{\tau}$ entrants appear. Enter or die. If enter, choose county
+2. Operator views last period congestion, quantity of generation in counties, makes upgrade decisions
 3. Production occurs for $h=4,380$ hours in half-year $t$ 
 - Unclear if there will be exit yet, need to review data 
 
@@ -272,19 +300,46 @@ Text: Note: once entered, firms make no decisions currently
 
 # Slide(30):
 Header: Entry Model - Entry to the Grid
+Break:1
 Text:
 - $N_{\tau}$ entrants appear, $N_{\tau}$ fixed to max number of counties of any tech entered in each $t$ in data $+ 1$
-- Entry incurs $\nu_{r\tau t} + \varepsilon_{r\tau t}$
-- Depends on fixed costs and expectations over state transitions
-- **States:** $q_{r\tau t}$ - local capacity of each tech type, $Q_{\tau t}$ - grid-wide capacity of each tech type, $k^l_r$ - capacity of key constraints
-- Implicitly, profits depend on how integrated region is. Higher $k$ means you compete against more firms, earn system lambda. Higher $q$ means congestion pricing lowers prices and profits
+- Entry incurs $\nu_{r\tau t} + \varepsilon_{r\tau t}$. Letting $\nu$ be distributed T1EV:
+Break:1
+Columns(top):
+Choose 
+$r \in \arg \max E_{\eta_r}[W(r,\tau,x_t)]$
+Where
+$W(r,\tau,x_t) = \rho E_t [\pi (x_{r\tau t})] - \phi_{r \tau}$
+---
+Yields logsum probability of $r$:
+$
+\begin{align}
+p(r;\tau, x_t) = \frac{exp(W_r/\sigma^\eta)}{1 + \sum_{r^\prime \in R} exp(W_{r^\prime}/\sigma^\eta)}
+\end{align}$
+
+# Slide(31):
+Header: Entry Model - Entry to the Grid
+Text:
+**States:** 
+- $x_t$ = $q_{r\tau t}$ - local capacity of each tech type, $Q_{\tau t}$ - grid-wide capacity of each tech type, $k^l_r$ - capacity of key constraints
+- Implicitly, profits depend on how integrated region is
+- Higher $k$ → compete against more firms, earn system lambda
+- Higher $q$ → congestion pricing lowers prices and profits
 
 # Slide(31):
 Header: equilibrium
 Text:
 - Entrants track own region state vars $q_{r\tau t}, k^l_{rt}$. Assume $k$ evolves according to own region quantity and aggregate quantities only
 - Entrants assume aggregate quantities evolve according to AR-1 process
-- Entry forms Moment-Based Markov Equilibrium (MME) (**Ifrach and Weintraub, 2017)
+- Entry forms Moment-Based Markov Equilibrium (MME) (**Ifrach and Weintraub, 2017**)
+
+# Slide(32):
+Header: Consistency
+Text: Dynamic competitive equilibrium:
+- Expectations about evolution of $k$ and $Q$ are correct
+- Entry probabilities given by logsum prob.
+- Upgrades given by upgrade policy function
+- Dispatch satisfies least-cost optimization conditional on grid topology
 
 # Slide(32):
 Header: Condensing the state space
@@ -293,6 +348,10 @@ Text:
 - Still ~80 counties with substantial generation, 300 transmission corridors
 - Proposal: using most frequently congestion lines, condense generation into ~40 regions, connected by X transmission lines, let grid evolve for each region
 - Problem parallelizable
+
+# Slide(26):
+BackgroundColor: accent
+BigText: ||| Appendix |||
 
 # Slide(33):
 Ref:tech_moments
