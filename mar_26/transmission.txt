@@ -161,9 +161,11 @@ Image: figures/lagged_nearby_upgrade_vs_entry_probability.png
 Text: Entry is probably a function of upgrades
 
 # Slide(14):
+Ref: entry_cong
 Header: Entry a function of congestion and/or upgrades?
 Image: figures/lagged_local_congestion_vs_entry_probability.png
 Text: Entry not really a function of congestion, though counterfactual unclear
+Text: >>> +++entry_panel[Entry Panel]+++ >>>
 
 # Slide(18):
 BackgroundColor: accent
@@ -355,6 +357,26 @@ Text:
 # Slide(26):
 BackgroundColor: accent
 BigText: ||| Appendix |||
+
+# Slide(34):
+Ref:entry_panel
+Image: figures/entry_congestion_map_2019.png, Backbone congestion is $t-1$
+
+# Slide(34):
+Image: figures/entry_congestion_map_2020.png, Backbone congestion is $t-1$
+
+# Slide(34):
+Image: figures/entry_congestion_map_2021.png, Backbone congestion is $t-1$
+
+# Slide(34):
+Image: figures/entry_congestion_map_2022.png, Backbone congestion is $t-1$
+
+# Slide(34):
+Image: figures/entry_congestion_map_2023.png, Backbone congestion is $t-1$
+
+# Slide(34):
+Image: figures/entry_congestion_map_2024.png, Backbone congestion is $t-1$
+Text: >>> +++entry_cong[Back]+++ >>>
 
 # Slide(33):
 Ref:tech_moments
