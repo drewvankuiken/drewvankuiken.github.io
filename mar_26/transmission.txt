@@ -181,7 +181,7 @@ $\begin{align*}x_{r\tau t} = \{q_{r\tau t}, \sum_{l_r} k^l_t, Q_{\tau t}\}\end{a
 - Let 
 $\begin{align*}v^{enter}_{r\tau t} (x_{r\tau t}) = \sum_{z=0} \delta^z \mathbb{E}_x[\pi_{r\tau t+z}|x_{r\tau t}] - \nu_{r\tau t}\end{align*}$.
 - The value of entering is $v^{enter}_{r\tau t} + \varepsilon_{r\tau t}$.
-IS EXPECTATION OVER X CORRECT?
+SpeakerNote: IS EXPECTATION OVER X CORRECT?
 
 # Slide(31):
 Header: Choosing a region
@@ -193,7 +193,7 @@ $
 \begin{align}
 p(r;\tau, x_t) = \frac{exp(v)}{1 + \sum_{r^\prime \in R} exp(v_{r^\prime})}
 \end{align}$
-DO I NEED RHO ANYMORE?
+SpeakerNote: DO I NEED RHO ANYMORE?
 
 # Slide(31):
 Header: equilibrium
