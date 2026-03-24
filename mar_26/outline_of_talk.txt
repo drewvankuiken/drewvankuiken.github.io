@@ -1,3 +1,70 @@
+Updated outline of talk for IO workshop presentation, 3/25/26
+
+1. Cartoon + policy options 
+2. How to provide infrastructure with endogenous entry? 
+- private benefits, utilization uncertain 
+- markets difficult or impossible to set up
+- study this question in context of Texas electricity grid -> prices low, grid reliable
+
+3. This paper:
+Evaluate how congestion prices and entry fees discipline entry on the electric grid
+	1. stylized facts
+	2. structural model of spatial location decisions and grid congestion
+	- endogenous generator entry decisions
+	- congestion based on physical representation of grid
+	- endogenous grid upgrades 
+	3. counterfactuals
+	- base case: only congestion pricing instrument
+	- PJM: only entry fee instrument
+	- instrument combination that minimizes prices subject to reliability constraint
+
+4. Today: 
+- Background, Data, Stylized Facts
+- Generator entry model
+
+5. Background
+- congestion prices, entry fees, upgrade policy 
+- Congestion rising in Texas
+- Demand stationary
+
+6. Facts: 
+- Do upgrade rules work? [No, wedge relative to planner]
+- How rare are upgrades? [142 total over 2018-2024]
+- Do they respond to congestion? [Loosely]
+- Does entry respond to upgrades? [Yes]
+- Does entry respond to congestion? [Loosely]
+- Are upgrades path-dependent? [in progress]
+
+7. Generator Entry Model
+- use entry model slides here
+- clean up math! 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Outline for IO Workshop presentation, 3/25/26
 50 min
 Interconnection and Transmission idea
