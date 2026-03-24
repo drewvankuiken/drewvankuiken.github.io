@@ -62,6 +62,26 @@ body {
   line-height: 1.5;
 }
 
+body.export-mode {
+  background: #ffffff;
+}
+
+body.export-mode .presentation-scaler {
+  box-shadow: none !important;
+}
+
+body.export-mode #editor,
+body.export-mode #progress-bar,
+body.export-mode .slide-counter,
+body.export-mode #company-logo,
+body.export-mode .presenter-controls {
+  display: none !important;
+}
+
+body.export-mode .slide {
+  transition: none !important;
+}
+
 /* The entire scaling system is driven by the --base-font-size variable */
 /* .slide-wrapper is the unified container for all rendering contexts */
 .slide-wrapper {
@@ -169,6 +189,10 @@ body {
 .slide.has-theme-fill .slide-content td {
   background: transparent !important;
   box-shadow: none !important;
+}
+
+.slide.has-theme-fill .slide-content {
+  background: var(--slide-fill-background, transparent) !important;
 }
 
 .slide.has-theme-fill .slide-content .small,
@@ -1324,6 +1348,20 @@ body.print-with-notes .print-notes-content {
     break-after: auto !important; 
   }
   .slide.hidden-in-presentation { display: none !important; }
+
+  .slide-header {
+    position: absolute !important;
+    z-index: 2 !important;
+    width: min(177.78vh, 100vw) !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: calc((100vh - (min(177.78vh, 100vw) * 0.5625)) / 2) !important;
+    padding: calc(var(--base-font-size) * 0.2) !important;
+  }
+
+  body.print-with-notes .slide-header {
+    top: 0 !important;
+  }
   
   /* --- 16:9 CONTENT BOX (THE "PRINTABLE SCREEN") --- */
   .slide-content {
@@ -1342,6 +1380,10 @@ body.print-with-notes .print-notes-content {
 
   .slide-content.has-background-image {
     background-color: var(--slide-content-bg-if-image) !important;
+  }
+
+  .slide.has-theme-fill .slide-content {
+    background: var(--slide-fill-background, var(--bg-color)) !important;
   }
 
   .slide.is-fullscreen-image-slide .slide-content {
@@ -4991,6 +5033,7 @@ async function getThumbnailHTML(rawText, theme) {
     if (fillConfig) {
       slideDiv.classList.add("has-theme-fill");
       slideDiv.style.background = fillConfig.background;
+      slideDiv.style.setProperty('--slide-fill-background', fillConfig.background);
       slideDiv.style.setProperty('--slide-fill-text-color', fillConfig.text);
       slideDiv.style.setProperty('--slide-fill-header-color', fillConfig.header);
       if (!attributes.background) {
@@ -6081,6 +6124,11 @@ async function applyTheme(themeId) {
   function handleURLParameters() {
     const urlParams = new URLSearchParams(window.location.search);
     const inputUrl = urlParams.get('xml');
+    const requestedSlideParam = urlParams.get('slide');
+    const requestedSlideNumber = Number.parseInt(requestedSlideParam || '', 10);
+    const requestedSlideIndex = Number.isFinite(requestedSlideNumber) && requestedSlideNumber > 0
+      ? requestedSlideNumber - 1
+      : 0;
     
     // Check for a saved session in local storage first, but only if no URL is specified.
     if (!inputUrl) {
@@ -6134,7 +6182,7 @@ async function applyTheme(themeId) {
         const newXml = convertTxtToXML(txt, fileLeaf);
         state.currentFilename = cleanName;
         sessionStorage.setItem(`Slides_${cleanName}`, newXml);
-        init(newXml, { fileName: cleanName, slideIndex: 0, reason: 'url' });
+        init(newXml, { fileName: cleanName, slideIndex: requestedSlideIndex, reason: 'url' });
       })
       .catch(err => {
         console.error(err);
@@ -6567,6 +6615,11 @@ window.resolveImagePath = function(imageSrc, baseUrl) {
   
   // Main entry point
   return async function() {
+    const startupParams = new URLSearchParams(window.location.search);
+    if (startupParams.get('export') === '1') {
+      document.body.classList.add('export-mode');
+    }
+
     await ImageStore.init();
     // Discover and load themes
     await discoverThemes();
