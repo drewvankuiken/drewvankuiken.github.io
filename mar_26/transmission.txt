@@ -45,9 +45,8 @@ BigText: ||| Background, Stylized Facts |||
 
 # Slide(6):
 Header: 3 policies
-Columns(top):
+Columns:
 Text:
-<<<
 **Congestion prices:**
 - Lower above congestion
 - Higher below congestion
@@ -59,11 +58,23 @@ Text:
 **Upgrades:**
 - Centrally planned
 - Paid for by ratepayers
-<<<
 ---
 Image: figures/avg_demeaned_lmp_map.png
 
 # Slide(7):
+Header: 3 policies: Effects
+Columns(top):
+Text:
+**Congestion prices:**
+- Push entry towards demand, away from congestion
+
+**Entry Fees:**
+- Lumpy upgrades, path-dependence
+
+**Upgrades:**
+- Strategic entry
+
+# Slide(8):
 Header: Data
 Ref:data
 Text: Lots of data. From 2018-2024:
@@ -77,7 +88,7 @@ Break:1
 Text: Missing: Grid capacity, reactance
 Notes: +++grid[Visualizations]+++
 
-# Slide(8):
+# Slide(9):
 Ref:facts
 Table:
 Query & Result & 
@@ -94,25 +105,25 @@ Does entry respond to congestion? & Loosely & +++entry_cong[5]+++
 ---
 Are upgrades path-dependent? & *in-progress* & 
 
-# Slide(9):
+# Slide(10):
 BackgroundColor: accent
 BigText: ||| Entry Model |||
 
-# Slide(10):
+# Slide(11):
 Header: Overview
 Text: **Goal** price-minimizing infrastructure provision
 - What infrastructure to build? → Spatial entry model 
 - Spatial entry model? → Expected profits
 - Expected profits? → Congestion, fixed costs, upgrades
 
-# Slide(11):
+# Slide(12):
 Header: Timing
 Text: 
 1. $N_{\tau}$ entrants appear. Choose county and enter or die.
 2. Operator views last period congestion, quantity of generation in counties, makes upgrade decisions
 3. Production occurs for $h=4,380$ hours in half-year $t$ 
 
-# Slide(12):
+# Slide(13):
 Header: Period 3: Production 
 Ref:dispatch_gen
 Text: 
@@ -123,7 +134,7 @@ s.t. $0 \leq q_{r\tau th} \leq f_{r\tau th} \bar{q}_{r\tau t}$
 - $f$ is a technology's capacity factor
 - $\bar{q}_{r\tau t}$ is installed capacity of $\tau$ in $r$
 
-# Slide(13):
+# Slide(14):
 Header: Period 3: Dispatch
 Text: 
 To find $q_{r\tau th}$, grid operator solves **least-cost dispatch**:
@@ -134,7 +145,7 @@ To find $q_{r\tau th}$, grid operator solves **least-cost dispatch**:
 - Selects $q_{r\tau th}$
 Notes: +++dispatch_details[Details]+++
 
-# Slide(14):
+# Slide(15):
 Header: Period 3: Production
 Ref:production
 Text: Recovering prices $p_r$: 
@@ -145,7 +156,7 @@ Text: Recovering prices $p_r$:
 - I need offer curves, demand, *grid capacity* → need a panel $k^l_t$
 Notes: +++grid_to_graph[Graph Representation]+++
 
-# Slide(15):
+# Slide(16):
 Header: Period 3: Recovering topology
 Ref:topology_gen
 Text: I fit a dispatch model on observed **prices, dispatch, offer curves, demand**
@@ -155,7 +166,7 @@ Text: I fit a dispatch model on observed **prices, dispatch, offer curves, deman
 - Classify upgrades into 3 buckets, find average capacity increase due to each upgrade type
 Notes: +++topology_details[Details]+++
 
-# Slide(16):
+# Slide(17):
 Header: Period 3: Fit
 Text: 
 <<<
@@ -172,7 +183,7 @@ Penalized-GMM:
 - Ex: Chambers ↔ Harris - updated capacity 2133MW, initial guess 1200MW
 <<< 
 
-# Slide(17): 
+# Slide(18): 
 Header: Period 2: Upgrades
 Text: Grid upgrade law of motion:
 $\begin{align*}k^l_{t+1} = k^l_t + \sum_g \delta_g U_{glt}\end{align*}$
@@ -183,7 +194,7 @@ $\begin{align*} Pr(U_{glt}=1 | \mathcal{I}_{t-1}) = p_g (R_{l,t-1},X_l,\alpha_r,
 - $R_{l,t-1}$ - how much **grid-wide** congestion an upgrade would relieve
 - entrants form expectations using $p_g$
 
-# Slide(18):
+# Slide(19):
 Header: Period 2: Regressors
 Text: 
 Let
@@ -201,7 +212,7 @@ Text: Endogeneity:
 - Shifters: {forecast errors (load, renewable supply), unexpected outages} $\times$ corridor exposure to shock
 ----
 
-# Slide(19):
+# Slide(20):
 Header: Period 1: Entry
 Break:1
 Text:
@@ -213,7 +224,7 @@ $\begin{align*}x_{rt} = \{\bar{q}_{r\tau t}, \sum_{l_r} k^l_t, \bar{Q}_{\tau t}\
 $\begin{align*}v_{r\tau} (x_{rt}) = - \nu_{r\tau t} + \mathbb{E} [\sum_{z=0} \beta^z \pi_{r\tau t+z}(x_{t+z}) | x_{rt}, a_t=r] \end{align*}$
 - The value of entering is $u_{r\tau t} = v_{r\tau}(x_{rt}) + \varepsilon_{r\tau t}$
 
-# Slide(20):
+# Slide(21):
 Header: Period 1: Choosing a region
 Text: Regions vary in expected profits and fixed costs
 - Entrants choose to enter $r \in \mathcal{R}$ or the outside option - not entering.
@@ -226,14 +237,14 @@ p(r;\tau, x_{rt}) = \frac{exp(v_{r\tau}(x_{rt}))}{1 + \sum_{r^\prime \in R} exp(
 $
 |||
 
-# Slide(21):
+# Slide(22):
 Header: Equilibrium
 Text:
 - Entrants track own region state vars $\bar{q}_{r\tau t}, k^l_{rt}$. Assume $k$ evolves according to own region quantity and aggregate quantities only
 - Entrants assume aggregate quantities evolve according to AR-1 process
 - Entry forms Moment-Based Markov Equilibrium (MME) (**Ifrach and Weintraub, 2017**)
 
-# Slide(22):
+# Slide(23):
 Header: Consistency
 Text: Dynamic competitive equilibrium:
 - Expectations about evolution of $k$ and $\bar{Q}$ are correct
@@ -241,7 +252,7 @@ Text: Dynamic competitive equilibrium:
 - Upgrades given by upgrade policy function
 - Dispatch satisfies least-cost optimization conditional on grid topology
 
-# Slide(23):
+# Slide(24):
 Header: Condensing the state space
 Text:
 - MME helps with curse of dimensionality
@@ -257,11 +268,11 @@ Text:
 
 
 
-# Slide(24):
+# Slide(25):
 BackgroundColor: accent
 BigText: ||| Appendix |||
 
-# Slide(25):
+# Slide(26):
 Header: Setting
 Ref:grid
 Columns:
@@ -270,7 +281,7 @@ Image: figures/texas_eia_lines_counties.png, The Grid
 Image: figures/texas_backbone_counties.png, The Backbone
 Notes: +++data[Back]+++
 
-# Slide(26):
+# Slide(27):
 Header: Demand
 Ref:demand
 Columns:
@@ -282,31 +293,31 @@ Text: + Yearly utility sales data for 88 utilities
 - $w_r$ calculated as share of $wz$ sales attributable to utilities serving $r$
 Notes: +++data[Back]+++
 
-# Slide(27):
+# Slide(28):
 Header: Supply Curves
 Ref:supply_curves
 Image: figures/county_supply_curve_brazoria_20250301_1600.png
 Notes: +++data[Back]+++
 
-# Slide(28):
+# Slide(29):
 Header: Entry Panels
 Ref:entry_panels
 Image: figures/entry_map_six_panel.png
 Notes: +++data[Back]+++
 
-# Slide(29):
+# Slide(30):
 Header: Congestion costs and spread rising
 Ref:congestion_costs
 Image: figures/corridor_year_congestion_chart.png
 Notes: +++data[Back]+++
 
-# Slide(30):
+# Slide(31):
 Header: Planner Upgrade wedge
 Ref:toy_model
 Image: figures/cs_vs_planner_equilibria.png
 Notes: +++facts[Back]+++
 
-# Slide(31):
+# Slide(32):
 Ref:upgrade_rarity
 Header: How rare are upgrades? Do they respond to congestion?
 Text:
@@ -320,28 +331,28 @@ Break: 1
 Text: I use **{{accent|completion}}** in this paper
 Notes: +++facts[Back]+++
 
-# Slide(32):
+# Slide(33):
 Ref: upgrade_cong
 Header: How rare are upgrades? Do they respond to congestion?
 Image: figures/lagged_stress_vs_upgrade_probability.png
 Text: Upgrades sort of respond to congestion, surprising shape
 Notes: +++facts[Back]+++
 
-# Slide(33):
+# Slide(34):
 Ref: entry_upgrades
 Header: Entry a function of congestion and/or upgrades?
 Image: figures/lagged_nearby_upgrade_vs_entry_probability.png
 Text: Entry is probably a function of upgrades
 Notes: +++facts[Back]+++
 
-# Slide(34):
+# Slide(35):
 Ref: entry_cong
 Header: Entry a function of congestion and/or upgrades?
 Image: figures/lagged_local_congestion_vs_entry_probability.png
 Text: Entry not really a function of congestion, though counterfactual unclear
 Notes: +++facts[Back]+++
 
-# Slide(35):
+# Slide(36):
 Header: Grid Operator's Problem
 Ref:dispatch_details
 Break:2
@@ -364,7 +375,7 @@ Columns:
 - $SF^l_r$ → Parameter
 Notes: +++dispatch_gen[Back]+++
 
-# Slide(36):
+# Slide(37):
 Header: From Grid to graph
 Ref:grid_to_graph
 Columns:
@@ -375,7 +386,7 @@ Image: figures/dallas_six_county_backbone_graph.png
 Text: [*Assumption*] reactance only varies by voltage, line length, number of lines between counties
 Notes: +++production[Back]+++
 
-# Slide(37):
+# Slide(38):
 Header: Recovering Capacities
 Ref:topology_details
 Text:
@@ -385,7 +396,7 @@ $k^l_t(\theta) = k^l_0 + \sum_{p=1}^P A_{lp} 1\{t\geq t_p\}\delta_{g(p)}$
 - Parameters:
 $\theta = (\{k^l_0\}_{l=1}^L,\{\delta_{g}\}_{g=1}^G) \, \Theta = \{k^l_0\geq 0 \forall l, \delta_{g}\geq 0 \forall g \}$
 
-# Slide(38):
+# Slide(39):
 Header: Recovering Capacities
 Ref:recovering_capacities
 Text: Objective:
@@ -408,7 +419,7 @@ Columns(top):
 3. Station expansion
 Notes: +++tech_moments[Tech Moments]+++
 
-# Slide(39):
+# Slide(40):
 Ref:tech_moments
 Text: **Moments**
 Let $\mu^{obs}_{lt}$ denote observed shadow prices for $l$. 
@@ -419,22 +430,22 @@ Let $s^{obs}_{lt} = |\lambda^{obs}_{r(l)t} - \lambda^{obs}_{r^\prime(l) t}|$ wit
 4. $m^{4,obs}_g = \frac{1}{|P_g|}\sum_{p:g(p)=g}[\frac{1}{|\mathcal{T}^{\text{post}}_p|}\sum_{t \in \mathcal{T}^{\text{post}}_p} \mu_{l(p)t} - \frac{1}{|\mathcal{T}^{\text{pre}}_p|}\sum_{t \in \mathcal{T}^{\text{pre}}_p} \mu_{l(p)t}]$, for observed and model data
 Notes: +++topology_gen[Back]+++
 
-# Slide(40):
+# Slide(41):
 Ref:entry_panel
 Image: figures/entry_congestion_map_2019.png, Backbone congestion is $t-1$
 
-# Slide(41):
+# Slide(42):
 Image: figures/entry_congestion_map_2020.png, Backbone congestion is $t-1$
 
-# Slide(42):
+# Slide(43):
 Image: figures/entry_congestion_map_2021.png, Backbone congestion is $t-1$
 
-# Slide(43):
+# Slide(44):
 Image: figures/entry_congestion_map_2022.png, Backbone congestion is $t-1$
 
-# Slide(44):
+# Slide(45):
 Image: figures/entry_congestion_map_2023.png, Backbone congestion is $t-1$
 
-# Slide(45):
+# Slide(46):
 Image: figures/entry_congestion_map_2024.png, Backbone congestion is $t-1$
 Text: >>> +++entry_cong[Back]+++ >>>

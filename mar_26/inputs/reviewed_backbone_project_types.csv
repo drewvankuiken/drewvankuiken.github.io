@@ -1,0 +1,167 @@
+project_number,year_completed,county_from,county_to,intercounty,current_type,reviewed_type,type_source,review_flag,title,project_description
+3937,2018,Harris,Grimes,True,new_corridor,new_corridor,dispatch_crosswalk_seed,,Brazos Valley Connection,Construct 345kV double circuit from Gibbons Creek to Zenith. Circuit numbers are 18 & 50.
+4299,2018,Freestone,Navarro,True,existing_corridor_expansion,existing_corridor_expansion,dispatch_crosswalk_seed,,Big Brown - Navarro Switch 345 kV Line,Upgrade existing double-circuit line
+4456,2018,Travis,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Gilleland Creek Autotransformer,Install a new 345/138 kV 672 MVA auto transformer at Gilleland Creek substation.
+4843,2018,Tarrant,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Hicks Sw. Sta. 345/138 kV autotransformer #2,Install second 345/138 kV autotransformer
+4962,2018,Borden,Borden,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Adding second 345/138 kV auto at Vealmoor station,
+5020,2018,Tom Green,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Red Creek: Replace the other 345/138 kV autotransformer,Replace both 345/138 kV autotransformers at Red Creek with 480 MVA autotransformers
+5176,2018,Wilbarger,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Riley: Add 345 kV reactors,"Add reactors to Tesla, Edith Clarke, Clear Crossing, and Riley"
+5177,2018,Wilbarger,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Tesla: Add 345 kV reactor,"Add reactors to Tesla, Edith Clarke, Clear Crossing, and Riley"
+5178,2018,Foard,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Edith Clarke: Add 345 kV reactor,"Add reactors to Tesla, Edith Clarke, Clear Crossing, and Riley"
+5179,2018,Haskell,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Clear Crossing: Add 345 kV reactor,"Add reactors to Tesla, Edith Clarke, Clear Crossing, and Riley"
+5180,2018,Carson,Briscoe,True,existing_corridor_expansion,existing_corridor_expansion,dispatch_crosswalk_seed,,Add second circuit to SLU panhandle loop,
+5187,2018,Cameron,Cameron,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Add 2nd Palmito Transfomer,
+5235,2018,Pecos,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Bakersfield Reactor Bank Addition(s),Add two (2) 50 MVAR reactor banks at Bakersfield Substation
+5270B,2018,Tom Green,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Twin Buttes Autotransformer Addition,Replace the existing Twin Buttes AT1 autotransformer with a new 345/138-kV 672 MVA autotransformer. Remove the existing 36 MVAR Twin Buttes AT1 tertiary reactor.
+5271,2018,Fayette,Fayette,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,FPP Bus Tie Upgrades,Add a second bus tie between LCRA TSC FPP 345-kV Yard #1 and Yard #2 with a minimum 1793 MVA rating. Upgrade T405 to a minimum rating of 1793 MVA.
+5273,2018,Comal,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Bergheim Substation Upgrade,Add a 345-kV bus and a 345/138-kV 336 MVA autotransformer at Bergheim Substation.
+5764,2018,Fort Bend,Fort Bend,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Obrien to WA Parish Ckts.98 & 99,"Increase thermal ratings of Ckst.98 & 99 Obrien to WA Parish by installing shunts on line and upgrading substation equipment_x000D_
+"
+5886,2018,Harris,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Bellaire Auto A1 - Upgrade Limiting Equipment,"Upgrade limiting equipment for Bellaire auto A1_x000D_
+"
+5894,2018,Harris,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Install Third Zenith 345/138kV 800MVA Transformer,Install a third 800MVA autotransformer at Zenith Substation.
+6087,2018,Comanche,Comanche,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Flat Top 345 kV Switching Station,Flat Top 345 kV Switching Station
+6311,2018,Harris,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Obrien Auto A2,"Replace the failed 600MVA autotransformer 2A and existing 600MVA autotransformer 2B with a new 800MVA autotransformer A2_x000D_
+"
+6312A,2018,Harris,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,PH Robinson Autotransformer A3 800MVA Addition,Install PH Robinson 800MVA 345/138kV Auto A3
+6891,2018,Dallas,Dallas,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,BenDavisAuto2ReturnFullRatings,Ben Davis Auto2 Returns Full Ratings 590 MVA
+08TPIT0033,2019,TRAVIS ,TRAVIS ,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Gilleland to Techridge 138kV Circuit,Establish a new 138kV circuit from Gilleland to Techridge and maintain a normally close tie between AEN and LCRA's switchyard at Gilleland.
+43531,2019,Galveston,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,PH Robinson - Replace Failed Auto A4,"Replace failed PH Robinson auto A4 (800MVA)_x000D_
+"
+44189,2019,Hood,Somervell,True,existing_corridor_expansion,existing_corridor_expansion,dispatch_crosswalk_seed,,Upgrade Wolf Holllow - Comanche Peak 345 kV Line,
+44687,2019,Deaf Smith,Deaf Smith,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,New 345kV substation,
+4473,2019,Guadalupe,Guadalupe,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Zorn to Marion 2nd 345-kV Transmission Line Addition,Add 345-kV Zorn (7042) to Marion (7044) 2nd circuit using bundled Suwannee.   Portion of the CPS-Tie Project.
+47418,2019,Upton,Ector,True,station_expansion,station_expansion,dispatch_crosswalk_seed,intercounty_station_default,KingMountainSwitchyardProject,King Mountain Switchyard Project
+4844,2019,Guadalupe,Guadalupe,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,2nd Marion Autotransformer,Add a Second 345/138-kV Autotransformer at Marion. Part of the CPS Tie Project
+5493,2019,Hays,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Hays Energy Substation Upgrade,Upgrade the Hays Energy 345-kV substation bus to a double bus double breaker configuration.
+5731B,2019,Dallas,Dallas,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Tri Corner 345 kV Sw Sta,Ultimate Configuration for Tri Corner
+6101,2019,Nueces,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Lon Hill: Replace 345/138 kV autotransformers,Replace 345/138 kV autotransformers  at Lon Hill
+6165,2019,San Patricio,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Whitepoint: Install 100 MVAR Reactor,"Whitepoint: Install 100 MVAR Reactor_x000D_
+"
+6312B,2019,Harris,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,PH Robinson Autotransformer A3 800MVA Addition,Move PH Robinson 800MVA 345/138kV Auto A1 to North bus.
+7092,2019,Ector,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Moss Sw. Sta. 345/138 kV Autotransformer #2,Moss Sw. Sta. 345/138 kV Autotransformer #2
+11TPIT0034,2020,DALLAS,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Sargent Road 345/138 kV autotransformer,Install second 345/138 kV autotransformer
+3298,2020,Bexar,Bexar,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Skyline - Install a Fourth 345kV Autotransformer.,Install one 600 MVA autotransformer at Skyline switchyard.
+3894,2020,McMullen,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Fowlerton 345 station and 345/138 autotransformer,Add 345 kV bus and autotransformer
+46094,2020,Ward,Ward,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Add Wolf 345 kV Switch,Wolf 345 kV Switch
+4829,2020,Bell,Bell,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Hutto Switch second 345/138 kV autotransformer,"Install new autotransformer_x000D_
+"
+48748,2020,Wilbarger,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Oklaunion: Install 345 kV reactor,Install reactor on the Oklaunion 345 kV bus
+51245,2020,Andrews,Andrews,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Add Andrews County South 345/138 kV Autotransformer #2,Andrews County South 345/138 kV Autotransformer #2
+5218A,2020,Atascosa,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,San Miguel 345/138 kV autotransformer replacements,Replace T1 300 MVA auto with much larger auto and open T2 for construction
+52527,2020,Harris,Harris,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Greens Bayou 345kV Reconfiguration - Ckt. 74F Deepwater to S,Disconnect existing circuits 68B & 74F at Greens Bayou and reconnect circuits to create new Ckt.74F Deepwater to Sheldon (Bypass GBY345).
+5499,2020,Tarrant,Dallas,True,existing_corridor_expansion,existing_corridor_expansion,dispatch_crosswalk_seed,,Everman - Cedar Hill Sw. Sta. 345 kV Line,"Upgrade existing Everman - Cedar Hill Sw. Sta. 345 kV Line_x000D_
+"
+5946,2020,Fayette,Bastrop,True,station_expansion,station_expansion,dispatch_crosswalk_seed,intercounty_station_default,Winchester Autotransformer Additions,Add two 672 MVA autotransformers at Winchester Substation. Cut the new 345-kV bus at Winchester into an existing Austin Energy owned 345-kV transmission line from FPP to Lost Pines.
+6673C,2020,Brazoria,Matagorda,True,station_expansion,station_expansion,dispatch_crosswalk_seed,intercounty_station_default,Freeport - Bridge the Gap,Loop Ckt.27 STP-DOW into Jones Creek to create new Ckt.27 Jones Creek to STP
+6673D,2020,Brazoria,Brazoria,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Freeport - Bridge the Gap,Loop Ckt.27 STP-DOW into Jones Creek to create new Ckt.27 Jones Creek to DOW
+6673F,2020,Brazoria,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Freeport - Bridge the Gap,Install 3rd 800MVA autotransformer (A3) at Jones Creek substation
+6673G,2020,Brazoria,Matagorda,True,station_expansion,station_expansion,dispatch_crosswalk_seed,intercounty_station_default,Freeport - Bridge the Gap,Install 7-Ohm in-series reactors at Jones Creek substation on Ckts.18 & 27 Jones Creek to STP
+6778,2020,Dallas,Dallas,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Tri Corner - Watermill 345 kV Line,Upgrade existing line
+7022,2020,Dallas,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Forney - Elkton 345 kV line termination at Tri Corner,Forney - Elkton 345 kV line termination at Tri Corner
+44426,2021,Baylor,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Foxtail: Add 345 kV reactor,Add new 345 kV reactor at Foxtail
+45575,2021,Pecos,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Solstice: Add second 345 kV reactor,Add a second 345 kV reactor at Solstice
+47434,2021,Guadalupe,Guadalupe,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Zorn Auto Replacement,"Increase the reliability of substation equipment at Zorn Substation through replacement of the Zorn AT1 autotransformer. _x000D_
+"
+50670,2021,San Patricio,Matagorda,True,station_expansion,station_expansion,dispatch_crosswalk_seed,intercounty_station_default,Angstrom: Build new 345 kV Station,Build new station on the STP to Whitepoint 345 kV line
+51953,2021,Medina,Bexar,True,existing_corridor_expansion,existing_corridor_expansion,dispatch_crosswalk_seed,,LCRATSC KENDALL MOST LIMITING SERIES ELEMENT,"Increase the rating of T459 transmission line between Kendall and Cagnon Road substations to a minimum of 3000A at 105 degree F ambient temperature by upgrading the Most Limiting Series Element (MLSE) at Kendall Substation._x000D_
+"
+5218B,2021,Atascosa,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,San Miguel 345/138 kV autotransformer replacements,Replace T2 300 MVA autos with much larger autos
+52197A,2021,Chambers,Chambers,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Jordan Auto A3 Addition (PLACID 138kV Sub),Install 800 MVA Jordan Auto A3
+52245,2021,Castro,Hale,True,new_corridor,new_corridor,dispatch_crosswalk_seed,,CONSTRUCT OGALLALA TO BLACKWATER DRAW 345 KV LINE,"REBUILD ABERNATHY SW AND RENAME BLACKWATER DRAW. CONSTRUCT OGALLALA TO BLACKWATER 345 KV LINE, LPL INTEGRATION"
+52258,2021,Hale,Lubbock,True,new_corridor,new_corridor,dispatch_crosswalk_seed,,CONSTRUCT BLACKWATER DRAW TO FOLSOM POINT345 KV LINE,"CONSTRUCT FOLSOM POINT SWITCH  AND BLACKWATER DRAW TO FOLSOM POINT 345 KV LINE, LPL INTEGRATION"
+52299,2021,Hale,Lubbock,True,new_corridor,new_corridor,dispatch_crosswalk_seed,,CONSTRUCT BLACKWATER DRAW TO DOUBLE MOUNTAIN,"CONSTRUCT DOUBLE MOUNTAIN SWITCH AND BLACKWATER DRAW TO DOUBLE MOUNTAIN 345 KV LINE, LPL INTEGRATION"
+52303,2021,Loving,Loving,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Quarry Field 345/138 kV Switch,Construct a new 345/138 kV Switch
+52307,2021,Lubbock,Lynn,True,new_corridor,new_corridor,dispatch_crosswalk_seed,,CONSTRUCT DOUBLE MOUNTAIN TO FIDDLEWOOD TO FARMLAND 345 KV L,"CONSTRUCT FIDDLEWOOD SWITCH AND DOUBLE MOUNTAIN TO FIDDLEWOOD TO FARMLAND 345 KV LINE, LPL INTEGRATION"
+52570,2021,Lubbock,Lubbock,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Double Mountain 75 MVAR Reactor,Install 75 MVAR Reactor
+52587,2021,Lubbock,Lubbock,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Fiddlewood 75MVAR Shunt Reactor,Install 75MVAR Reactor
+5440,2021,Reeves,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Riverton 345 kV Switching Station,Construct new 345 kV switching station
+5445,2021,Ector,Reeves,True,new_corridor,new_corridor,dispatch_crosswalk_seed,,Riverton-Odessa EHV/Moss 345 kV Line,Riverton-Odessa EHV/Moss 345 kV Line
+5530,2021,Pecos,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Solstice: Build 345 kV station,"Construct new 345 kV station with two 345/138 kV autotransformers, reactor, and build new 345 kV line from Solstice to Bakersfield"
+5539,2021,Pecos,Pecos,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Solstice to Bakersfield: Build 345 kV line,"Construct new 345 kV station with two 345/138 kV autotransformers, reactor, and build two new 345 kV lines from Solstice to Bakersfield"
+57514,2021,Harris,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Jeanetta Auto A1 Upgrade,Upgrade Jeanetta Auto A1
+6382,2021,Hidalgo,Hidalgo,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Stewart Road:  Construct 345 kV cut-in,"Hairpin the North Edinburg to SU Palmito 345 kV line into new Stewart Rd 345 station.  The hairpin will be constructed in a double circuit configuration, approximately 5 miles long.  "
+6594,2021,Pecos,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Solstice: Add 345 kV reactor,"Construct new 345 kV station with two 345/138 kV autotransformers, reactor, and build new 345 kV line from Solstice to Bakersfield "
+6668A,2021,Brazoria,Brazoria,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Freeport - Master Plan,Upgrade Ckts. 18 & 27 DOW to Jones Creek to increase thermal limits
+7119,2021,Ward,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Sand Lake 345 kV Sw. Sta.,Sand Lake 345 kV Sw. Sta.
+7120,2021,Reeves,Ward,True,new_corridor,new_corridor,dispatch_crosswalk_seed,,Riverton Sw. Sta. - Sand Lake Sw. Sta. 345 kV Line,Riverton Sw. Sta. - Sand Lake Sw. Sta. 345 kV Line
+7121,2021,Ward,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Sand Lake Sw. Sta. - Solstice 345 kV Line,Sand Lake Sw. Sta. - Solstice 345 kV Line
+7129,2021,Hood,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,DeCordova 345/138kV_Sw.,Rebuild existing switching DeCordova station
+46938,2022,Dallas,Dallas,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,McCreeAdds600MVAAuto2,McCreeAdds600MVAAuto2
+50643,2022,Bexar,Bexar,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,CPSE_Spruce_Skyline MLSE,Upgrade terminals at Spruce and Skyline to ensure a 3000 A rating (minimum).
+50878,2022,Hidalgo,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,North Edinburg: 345 kV Reconfigure,North Edinburg: 345 kV Reconfigure
+52197B,2022,Chambers,Harris,True,station_expansion,station_expansion,dispatch_crosswalk_seed,intercounty_station_default,Jordan Auto A3 Addition (PLACID 138kV Sub),Loop Ckt 97C-1 Chambers-King into Jordan 345kV
+5604,2022,Hidalgo,Hidalgo,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Stewart Road:  Construct 345 kV cut-in,"Construct new 345 kV 4 breaker ring bus station at AEP Stewart Rd, with two 675 MVA 345/138 autotransformers connected to Stewart Rd 138 station. Hairpin the North Edinburg to SU Palmito 345 kV line into new Stewart Rd 345 station.  The hairping will be constructed in a double circuit configuration, approximately 5 miles long.  Also install 100 Mvar shunt reactor at the new Stewart Rd 345 kV station.  _x000D_
+"
+5624,2022,Bell,Bell,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Killeen Sw. Sta. 345/138 kV Autotransformer Replacement,Replace existing autotransformer
+57582,2022,Chambers,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Cedar Bayou Auto A1 Upgrade,Upgrade Cedar Bayou auto A1 to increase thermal limits
+57586,2022,Chambers,Harris,True,existing_corridor_expansion,existing_corridor_expansion,dispatch_crosswalk_seed,,Cedar Bayou to Center Ckt.97D Upgrade,Upgrade Cedar Bayou to Center Ckt.97D
+61604,2022,Throckmorton,Throckmorton,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Add Tecumseh Creek 345 kV Switch,Add Tecumseh Creek 345 kV Switch
+61849,2022,Guadalupe,Guadalupe,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Clear Springs AT2 Autotransformer Upgrade,"Increase the reliability of substation equipment at Clear Springs Substation through the replacement of the Clear Springs AT2 345/138-kV autotransformer. _x000D_
+"
+6273,2022,Tarrant,Tarrant,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Saginaw-Eagle Mountain 138 kV DCKT,Upgrade the Saginaw - Eagle Mountain 138 kV Double Circuit Line
+63772,2022,Dickens,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Hyperion: Build 345 kV Station,Build new 345 kV Station next to the Cottonwood 345 kV station
+6668B,2022,Wharton,Brazoria,True,new_corridor,new_corridor,dispatch_crosswalk_seed,,Freeport - Master Plan,New 345 kV double-circuit line from Bailey Substation to Jones Creek Substation
+7118,2022,Tarrant,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Everman 345 kV Sw. Sta.,Rebuild Everman 345 kV Sw. Sta.
+5492,2023,Ellis,Tarrant,True,existing_corridor_expansion,existing_corridor_expansion,dispatch_crosswalk_seed,,Venus - Webb/Cedar Hill Sw. Sta. 345 kV DCKT Line,"Upgrade existing Venus - Webb/Cedar Hill Sw. Sta. 345 kV Double Ckt Line_x000D_
+"
+57584,2023,Chambers,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Cedar Bayou Auto A1 and A3 Position Swaps at 138kV,Swap Cedar Bayou Auto A1 and A3 Positions on the 138kV side to address fault concerns
+57731B,2023,Travis,Travis,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Hornsby Substation Addition,Construct a new 345-kV substation between Clear Springs to Gilliland Creek 345-kV transmission line to provide transmission service to a load-serving substation. Restore 138-kV transmission line from Decker to Sand Hill by removing temporary substation/arrangements made in first phase to serve load.
+59402,2023,Midland,Midland,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Add Midland East Switch 345138 kV Autotransformer #2,Add a new 345/138 kV autotransformer to existing switch
+61851,2023,Guadalupe,Guadalupe,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Marion AT2 Autotransformer Upgrade,"Increase the reliability of substation equipment at Marion Substation through the replacement of the Marion AT2 345/138-kV autotransformer and installation of three 345-kV shunt reactors. _x000D_
+"
+63491,2023,Crockett,Schleicher,True,existing_corridor_expansion,existing_corridor_expansion,dispatch_crosswalk_seed,,Schneeman Draw to Big Hill 2nd circuit,Add the 2nd circuit to CREZ Schneeman Draw to Big Hill 345 kV line
+63493,2023,Crockett,Crockett,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Noelke to Schneeman Draw 2nd circuit,Add the 2nd circuit to the CREZ Noelke to Schneeman Draw 345 kV line
+63495,2023,Crockett,Crockett,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Cedar Canyon to Noelke 2nd circuit,Add the 2nd circuit to CREZ Cedar Canyon to Noelke 345 kV line
+63497,2023,Pecos,Crockett,True,existing_corridor_expansion,existing_corridor_expansion,dispatch_crosswalk_seed,,Bakersfield to Cedar Canyon 2nd circuit,Add the 2nd circuit to CREZ Bakersfield to Cedar Canyon 345 kV line
+66530,2023,Midland,Midland,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Add Consavvy 345/138 kV Switch,Add Consavvy 345/138 kV Switch
+69007,2023,Zapata,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Tiempo: Build new 345 kV station,Construct new Tiempo 345 kV station for the ETT 2nd circuits project
+6934A,2023,Guadalupe,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Elm Creek - New 345 kV Reactor,Install new 345 kV 60 Mvar Reactor at Elm Creek Substation.
+45399,2024,Glasscock,Howard,True,new_corridor,new_corridor,dispatch_crosswalk_seed,,Bearkat Loop - Bearkat to Longshore,Adds 345 KV line from Bearkat to Longshore.
+48587,2024,Midland,Midland,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Tesoro 345/138 kV Switch,Construct a new 345/138 kV switch (formerly known as Quail East)
+50954,2024,San Patricio,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Whitepoint: Add Second Auto,Whitepoint: Add Second Auto
+53968,2024,Fayette,Washington,True,existing_corridor_expansion,existing_corridor_expansion,dispatch_crosswalk_seed,,Fayetteville_Salem_TransmissionLine_Rehabilitation,Increase the reliability of transmission facilities on the T177 Fayetteville to Salem 138-kV and T211 FPP Yard #1 to Salem 345-kV 19.3-mile double-circuit transmission line by replacing the existing Condor conductor from Fayetteville Substation to Salem Substation.
+61356,2024,Hays,Comal,True,existing_corridor_expansion,existing_corridor_expansion,dispatch_crosswalk_seed,,Hays Energy-Henne Split Transmission Line Upgrade,"This project will increase the reliability and capacity of the transmission facilities on the T389 Bergheim to Hays Energy 5.4-mile 345-kV section of transmission line by replacing the aging conductor from Hays Energy Substation to Henne Split.  _x000D_
+_x000D_
+"
+64382,2024,Archer,Archer,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Bowman Auto 1 Upgrade,Upgrade existing Bowman Auto #1 300 MVA to 600 MVA.
+64856,2024,Atascosa,Cameron,True,existing_corridor_expansion,existing_corridor_expansion,dispatch_crosswalk_seed,,North Edinburg to Palmito: Build second circuit 345 kV line,"Hang conductor to complete a double circuit between North Edinburg and Palmito for the ETT 2nd circuits project_x000D_
+"
+67270E,2024,Brazoria,Brazoria,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,BP23 Reliability Upgrades,Upgrade Ckt.27A DOW to Jones Creek to increase thermal limits
+67377,2024,Archer,Archer,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Upgrade Bowman Autotransfomer 2 ,Upgrade existing Bowman Auto #2 300 MVA to 600 MVA.
+68793,2024,Martin,Martin,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Expanse 345/138 kV Switch,Construct a new 345/138 kV switch
+68804,2024,Ellis,Dallas,True,station_expansion,station_expansion,dispatch_crosswalk_seed,intercounty_station_default,Loop Nine 345/138 kV Switch,Establish Loop Nine 345/138 kV Switch
+68960,2024,Hidalgo,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,North Edinburg: Expand 345 kV station,"Construct new terminals at North Edinburg for the ETT 2nd circuits project_x000D_
+"
+68968,2024,Hidalgo,Zapata,True,new_corridor,new_corridor,dispatch_crosswalk_seed,,North Edinburg to Pomelo: Build new 345 kV line,Install conductor between North Edinburg and Tiempo
+68970,2024,Webb,Starr,True,station_expansion,station_expansion,dispatch_crosswalk_seed,intercounty_station_default,Lobo: Build (2) 345 kV terminals,"Construct new terminals at Cenizo, Del Sol, Lobo, and Pomelo for the ETT 2nd circuits project"
+68972,2024,Webb,Zapata,True,existing_corridor_expansion,existing_corridor_expansion,dispatch_crosswalk_seed,,Tiempo to Fowlerton: Add Second 345 kV Circuit,"Hang conductor to complete a double circuit between Tiempo and Fowlerton for the ETT 2nd circuits project_x000D_
+"
+68974,2024,Atascosa,McMullen,True,existing_corridor_expansion,existing_corridor_expansion,dispatch_crosswalk_seed,,Second circuit from San Miguel to Fowlerton 345 kV,String the second circuit on existing towers from San Miguel to Fowlerton
+69002,2024,Starr,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Pronto: Build new 345 kV station,"Construct new Pronto 345 kV station for the ETT 2nd circuits project_x000D_
+"
+69005,2024,Starr,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Rapido: Build new 345 kV station,"Construct new Rapido 345 kV station for the ETT 2nd circuits project_x000D_
+"
+70964,2024,Howard,Martin,True,station_expansion,station_expansion,dispatch_crosswalk_seed,intercounty_station_default,WETT 345 kV Volta witch,Construct new 345 kV Volta Switch and two approximately 0.15-mile 345 kV lines between WETT-owned Volta 345 kV Switch and Oncor-owned Expanse
+71873,2024,Bexar,Bexar,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,CPSE_Hill Country Auto# 2 Impedance Upgrade,
+71997,2024,Collin,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Collin Autotransformer #2 tertiary reactors,Install new reactors on Collin Autotransformer #2
+72002,2024,Collin,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Anna Autotransformer #2 tertiary reactors,Install new reactors on Anna Autotransformer #2
+73125,2024,Webb,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Del Sol: Line settings,"Build new terminals at Cenizo, Del Sol, Lobo, and Pomelo_x000D_
+"
+73127,2024,Starr,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Pomelo: Construct (2) 345 kV terminals,"Build new terminals at Cenizo, Del Sol, Lobo, and Pomelo_x000D_
+"
+73129,2024,Webb,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Cenizo: Build 345 kV terminal,"Build new terminals at Cenizo, Del Sol, Lobo, and Pomelo_x000D_
+"
+73371A,2024,Harris,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,BP24 Sub Upgrades,"Upgrade Bellaire Auto A2 spans and CTs to increase thermal limits_x000D_
+"
+73371B,2024,Harris,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,BP24 Sub Upgrades,Upgrade Bellaire Auto A5 CTs to increase thermal limits
+73371E,2024,Fort Bend,Fort Bend,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,BP24 Sub Upgrades,Upgrade Whaley to WA Parish Ckt.72F to increase thermal limits
+73371F,2024,Harris,Fort Bend,True,existing_corridor_expansion,existing_corridor_expansion,dispatch_crosswalk_seed,,BP24 Sub Upgrades,Upgrade Jeanetta to WA Parish Ckt.64A to increase thermal limits
+73371G,2024,Brazoria,Brazoria,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,BP24 Sub Upgrades,Upgrade Ckt.27A DOW to Jones Creek to increase thermal limits for Continuous ratings
+73371H,2024,Harris,Harris,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,BP24 Sub Upgrades,Upgrade White Oak to Jeanetta Ckt.72B to increase thermal limits
+75682,2024,Wilson,Guadalupe,True,station_expansion,station_expansion,dispatch_crosswalk_seed,intercounty_station_default,Add Branch between Libra and Elm Creek,
+76245,2024,Hidalgo,Starr,True,existing_corridor_expansion,existing_corridor_expansion,dispatch_crosswalk_seed,,Pomelo to Pronto: Build new 345 kV line,Install conductor between North Edinburg and Tiempo
+76247,2024,Starr,Zapata,True,existing_corridor_expansion,existing_corridor_expansion,dispatch_crosswalk_seed,,Rapido to Tiempo: Build new 345 kV line,Install conductor between North Edinburg and Tiempo
+76385,2024,Milam,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Gibson 345 kV Switch,Establish the Gibson 345 kV Switch
+76431,2024,Falls,Falls,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Establish 345 kV Bale Switch,Establish 345 kV Bale Switch
+76564,2024,Milam,,False,station_expansion,station_expansion,dispatch_crosswalk_seed,,Little Pond 345 kV Switch,Establish the Little Pond 345 kV Switch

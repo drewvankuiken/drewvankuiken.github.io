@@ -1,0 +1,5 @@
+spec,outcome,status,n_obs,n_events,pseudo_r2
+spec_a_any_own,upgrade_any,ok,1800,215,0.17756014398603082
+spec_b_any_relief,upgrade_any,ok,1800,215,0.1790761330557903
+spec_c_station_relief,upgrade_station,ok,1800,210,0.17582430658788561
+spec_d_line_relief,upgrade_line,ok,1800,16,0.16870145522530988
