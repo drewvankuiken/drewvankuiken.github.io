@@ -70,7 +70,7 @@ title: "Drew Van Kuiken"
       </article>
       <article class="research-item">
         <div class="research-main">
-          <h4 class="research-title">Entering (and Upgrading) Congested Networks</h4>
+          <h4 class="research-title">Strategic Entry on the Electric Grid</h4>
           <p class="research-summary">What's the right amount of transmission to have when entry is endogenous?</p>
         </div>
       </article>      
