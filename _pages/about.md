@@ -36,6 +36,16 @@ title: "Drew Van Kuiken"
   <div class="section-container">
     <h2>Research</h2>
     <div class="research-group">
+      <h3>Job Market Paper</h3>
+      <article class="research-item">
+        <div class="research-main">
+          <h4 class="research-title">Infrastructure as Market Design: Location and Technology Choice on the Electric Grid</h4>
+          <p class="research-summary">What's the right amount of transmission to have when entry is endogenous?</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="research-group">
       <h3>Publications</h3>
       <article class="research-item">
         <div class="research-main">
@@ -57,6 +67,13 @@ title: "Drew Van Kuiken"
       <h3>Works in Progress</h3>
       <article class="research-item">
         <div class="research-main">
+          <h4 class="research-title">The Long and Short of Long- and Short-Duration Electricity Storage</h4>
+          <p class="research-meta">w/ Alex Marsh, Hannah Rubinstein, Jonathan W. Williams, and Andrew J. Yates</p>
+          <p class="research-summary">What does the future of the grid look like when batteries are differentiated?</p>
+        </div>
+      </article>
+      <article class="research-item">
+        <div class="research-main">
           <h4 class="research-title">Product Quality and Consolidation</h4>
           <p class="research-meta">w/ Bowen Li, Nate Miller, Nick Rupp, and Jonathan W. Williams</p>
           <p class="research-summary">Everyone hates airlines. Should they?</p>
@@ -66,19 +83,6 @@ title: "Drew Van Kuiken"
               <p>The airline industry has undergone many changes in the last 30 years and faced substantial scrutiny over performance and pricing. Our analysis combines a variety of data sources to provide a long-term perspective on market structure and its impact on consumer welfare. We begin by documenting trends in prices, network connectivity, consolidation, low-cost competition, passenger values, and measures of service quality.  To measure the impact of these factors on consumer welfare, we estimate a structural model of price competition between airlines to recover consumer's preferences over service attributes and identify determinants of airline's costs. We find that consumer welfare has steadily improved over this period with increased low-cost competition and improvements to legacy networks being the primary contributors. We discuss the implications of our results for policy directed at the industry. </p>
             </details>
           </div>
-        </div>
-      </article>
-      <article class="research-item">
-        <div class="research-main">
-          <h4 class="research-title">Strategic Entry on the Electric Grid</h4>
-          <p class="research-summary">What's the right amount of transmission to have when entry is endogenous?</p>
-        </div>
-      </article>      
-      <article class="research-item">
-        <div class="research-main">
-          <h4 class="research-title">The Long and Short of Long- and Short-Duration Electricity Storage</h4>
-          <p class="research-meta">w/ Alex Marsh, Hannah Rubinstein, Jonathan W. Williams, and Andrew J. Yates</p>
-          <p class="research-summary">What does the future of the grid look like when batteries are differentiated?</p>
         </div>
       </article>
     </div>
