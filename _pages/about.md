@@ -40,7 +40,7 @@ title: "Drew Van Kuiken"
       <article class="research-item">
         <div class="research-main">
           <h4 class="research-title">Infrastructure as Market Design: Location and Technology Choice on the Electric Grid</h4>
-          <p class="research-summary">When infrastructure shifts where and which technologies show up in a market, what policy maximizes welfare?</p>
+          <p class="research-summary">When infrastructure shifts equilibrium entry, what policy maximizes welfare?</p>
         </div>
       </article>
     </div>
