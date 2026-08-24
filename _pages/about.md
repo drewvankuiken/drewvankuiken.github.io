@@ -7,7 +7,7 @@ title: "Drew Van Kuiken"
 <section id="hero" class="section-hero">
   <div class="section-container">
     <h1 class="hero-title">Drew Van Kuiken</h1>
-    <p class="hero-subtitle">Fifth-year Ph.D. student at UNC Chapel Hill</p>
+    <p class="hero-subtitle">Sixth-year Ph.D. student at UNC Chapel Hill</p>
     <div class="hero-links">
       <a class="hero-link" href="/files/vita.pdf" target="_blank" rel="noopener">CV</a>
       <span class="hero-separator">&bull;</span>
