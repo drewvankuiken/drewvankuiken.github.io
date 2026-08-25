@@ -41,6 +41,12 @@ title: "Drew Van Kuiken"
         <div class="research-main">
           <h4 class="research-title">Infrastructure as Market Design: Location and Technology Choice on the Electric Grid</h4>
           <p class="research-summary">When infrastructure shifts equilibrium entry, what infrastructure policy maximizes welfare?</p>
+          <div class="research-actions">
+            <details class="research-abstract">
+              <summary class="research-action">Abstract</summary>
+              <p>If benefits to infrastructure vary by firm, shifting infrastructure availability will change the equilibrium level and location of entry. I study this channel in the context of the Texas electric grid, where electric transmission is scarce and renewable resource quality varies by region and technology. I solve a dynamic entry game for renewable generators, capturing spatial and technological entry margins. Embedded within my entry game is a physically realistic model of electricity dispatch, where electricity flows and prices are endogenous. The model is based on a new dataset (2018–2024) with generation, transmission capacity, and demand information. I find that limited transmission capacity and spatially concentrated wind resources suppress wind entry, while solar generators respond to limited transmission capacity by entering less sunny regions with fewer transmission constraints. I explore two counterfactuals—one where entrants pay for grid upgrades, and one where grid operators run a market for new transmission—under fixed demand and data-center-driven demand growth. I find that the market for new transmission generates more welfare than the Texas or entrant-funded upgrade policies, and that both non-market policies yield inefficiently low and spatially distorted entry choices.</p>
+            </details>
+          </div>
         </div>
       </article>
     </div>
