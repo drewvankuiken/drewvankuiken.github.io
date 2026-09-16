@@ -21,7 +21,8 @@ title: "Drew Van Kuiken"
 <section id="profile" class="section-profile">
   <div class="section-container">
     <div class="profile-copy">
-      <p>I study industrial organization and energy economics. My current research focuses on short- and long-run changes to the electrical grid.</p>
+      <p><strong>I will be on the job market in 2026-2027.</strong></p>
+      <p>I study industrial organization and environmental economics. My current research focuses on the market structure of the electric grid.</p>
       <p>Outside of economics, I enjoy backcountry skiing, funky music, and, courtesy of my parents, Detroit-area sports teams.</p>
     </div>
     <div class="profile-media">
