@@ -24,6 +24,7 @@ title: "Drew Van Kuiken"
       <p><strong>I will be on the job market in 2026-2027.</strong></p>
       <p>I study industrial organization and environmental economics. My current research focuses on the market structure of the electric grid.</p>
       <p>Outside of economics, I enjoy backcountry skiing, funky music, and, courtesy of my parents, Detroit-area sports teams.</p>
+      <p>You can find my CV <a href="/files/vita.pdf" target="_blank" rel="noopener">here</a>.</p>
     </div>
     <div class="profile-media">
       <img src="{{ '/images/profile.JPG' | relative_url }}" alt="Drew Van Kuiken" class="profile-photo">
