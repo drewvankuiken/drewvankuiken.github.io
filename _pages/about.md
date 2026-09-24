@@ -27,7 +27,7 @@ title: "Drew Van Kuiken"
       <p>You can find my CV <a href="/files/vita.pdf" target="_blank" rel="noopener">here</a>.</p>
     </div>
     <div class="profile-media">
-      <img src="{{ '/images/profile.JPG' | relative_url }}" alt="Drew Van Kuiken" class="profile-photo">
+      <img src="{{ '/images/profile_2026.jpg' | relative_url }}" alt="Drew Van Kuiken" class="profile-photo">
     </div>
   </div>
 </section>
