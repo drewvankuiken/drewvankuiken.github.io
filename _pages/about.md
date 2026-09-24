@@ -72,14 +72,25 @@ title: "Drew Van Kuiken"
     </div>
 
     <div class="research-group">
-      <h3>Works in Progress</h3>
+      <h3>Working Papers</h3>
       <article class="research-item">
         <div class="research-main">
-          <h4 class="research-title">The Long and Short of Long- and Short-Duration Electricity Storage</h4>
+          <h4 class="research-title">Endogenous Use of Electricity Storage in the Long Run</h4>
           <p class="research-meta">w/ Alex Marsh, Hannah Rubinstein, Jonathan W. Williams, and Andrew J. Yates</p>
           <p class="research-summary">What does the future of the grid look like when batteries are differentiated?</p>
+          <div class="research-actions">
+            <details class="research-abstract">
+              <summary class="research-action">Abstract</summary>
+              <p>We study the role of electricity storage in a long-run equilibrium model with multiple storage technologies and region-specific renewable resources. Varying storage costs and efficiency as well as policy across a rich set of simulations, we characterize storage regimes, substitution patterns, and emissions impacts. A central result is that the temporal pattern of storage use is an equilibrium outcome rather than being fixed by technological characteristics; both short- and long-duration storage are commonly used for relatively short-term arbitrage. Nevertheless, technological differences shape the extent to which one type of storage can substitute for another.</p>
+            </details>
+            <a class="research-action" href="/files/EndogenousStorageLongRun.pdf" target="_blank" rel="noopener">PDF</a>
+          </div>
         </div>
       </article>
+    </div>
+
+    <div class="research-group">
+      <h3>Works in Progress</h3>
       <article class="research-item">
         <div class="research-main">
           <h4 class="research-title">Product Quality and Consolidation</h4>
